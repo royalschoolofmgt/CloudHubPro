@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html class="rd-navbar-sidebar-active" lang="en">
+  <head>
+    <title>order dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Template Monster Admin Template">
+    <meta property="og:description" content="brevis, barbatus clabulares aliquando convertam de dexter, peritus capio. devatio clemens habitio est.">
+    <meta property="og:image" content="http://digipunk.netii.net/images/radar.gif">
+    <meta property="og:url" content="http://digipunk.netii.net">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+	
+    <link rel="stylesheet" href="components/base/base.css">
+	<link rel="stylesheet" type="text/css" href="html/css/style.css">
+	<link rel="stylesheet" href="custom/sidebar.css">
+    <link rel="stylesheet" href="custom/orderdashboard.css">
+    <script src="components/base/script.js"></script>
+    
+  </head>
+  <body>
+    <div class="page">
+       <header class="section page-header">
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar">
+            <div class="rd-navbar-panel">
+              <div class="rd-navbar-panel-cell">
+                <button class="btn btn-sm btn-navbar-panel rd-navbar-sidebar-toggle" data-navigation-switch="data-navigation-switch"><span class="linearicons-menu"></span></button>
+              </div>
+              <div class="rd-navbar-panel-cell brd-none">
+                <ul class="nav custom-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Rakuten</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Website</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">eBay</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="rd-navbar-panel-center"></div>
+              <div class="rd-navbar-panel-cell brd-none">
+                <!-- Search -->
+                <div class="rd-navbar-panel-cell rd-navbar-panel-cell-search">
+                  <div class="rd-navbar-sidebar-search">
+                    <input class="form-control" type="text" placeholder="Search"/>
+                  </div>
+                </div>
+                <div class="rd-navbar-subpanel" id="subpanel-chat">
+                  <div class="panel">
+                    <div class="panel-header p-2">
+                      <h6 class="panel-title"><span class="panel-icon fa-pencil"></span> <span>Chat widget</span>
+                      </h6>
+                    </div>
+                    <div class="panel-body scroller scroller-vertical p-2">
+                      <div class="media media-cloud group-10">
+                        <div class="media-item"><img src="images/users/user-02-50x50.jpg" width="50" height="50" alt=""/></div>
+                        <div class="media-body">
+                          <h6 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                          </h6>
+                          <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                        </div>
+                      </div>
+                      <div class="media media-cloud flex-row-reverse group-10">
+                        <div class="media-item"><img src="images/users/user-03-50x50.jpg" width="50" height="50" alt=""/></div>
+                        <div class="media-body media-body-right-caret">
+                          <h6 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                          </h6>
+                          <div class="media-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                        </div>
+                      </div>
+                      <div class="media media-cloud group-10">
+                        <div class="media-item"><img src="images/users/user-02-50x50.jpg" width="50" height="50" alt=""/></div>
+                        <div class="media-body">
+                          <h6 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                          </h6>
+                          <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                        </div>
+                      </div>
+                      <div class="media media-cloud flex-row-reverse group-10">
+                        <div class="media-item"><img src="images/users/user-03-50x50.jpg" width="50" height="50" alt=""/></div>
+                        <div class="media-body media-body-right-caret">
+                          <h6 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                          </h6>
+                          <div class="media-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer p-2">
+                      <div class="input-group form-group">
+                        <input class="form-control" type="text" placeholder="Enter your message"/>
+                        <div class="input-group-append"> 
+                          <button class="btn btn-primary">Send</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rd-navbar-panel-cell brd-none">
+                <button class="btn btn-sm btn-navbar-panel" data-multi-switch='{"targets":"#subpanel-notifications","scope":"#subpanel-notifications","isolate":"[data-multi-switch]"}'><span class="linearicons-alarm"></span><span class="badge badge-primary">2</span></button>
+                <div class="rd-navbar-subpanel" id="subpanel-notifications">
+                  <div class="panel">
+                    <div class="panel-header">
+                      <h6 class="panel-title"><span class="panel-icon fa-bell"></span><span>Notifications</span></h6>
+                    </div>
+                    <div class="panel-body p-2 scroller scroller-vertical">
+                      <div class="group-5">
+                        <div class="alert alert-dismissible alert-primary alert-sm" role="alert"><span class="alert-icon fa-telegram"></span><span>Message</span>
+                          <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="alert alert-dismissible alert-warning alert-sm" role="alert"><span class="alert-icon fa-warning"></span><span>Warning</span>
+                          <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="alert alert-dismissible alert-danger alert-sm" role="alert"><span class="alert-icon fa-remove"></span><span>Error</span>
+                          <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="alert alert-dismissible alert-success alert-sm" role="alert"><span class="alert-icon fa-thumbs-up"></span><span>Success</span>
+                          <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer p-2"><a class="btn btn-primary btn-sm" href="alerts.html">See more</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="rd-navbar-panel-cell">
+                <button class="btn btn-sm btn-navbar-panel" data-multi-switch='{"targets":".sidebar","scope":".sidebar","isolate":"[data-multi-switch]"}'><span class="linearicons-ellipsis"></span></button>
+              </div>
+            </div>
+            <div class="rd-navbar-sidebar scroller scroller-vertical">
+              <div class="rd-navbar-sidebar-panel">
+                <div>
+                  <div class="group-15">
+                    <div class="rd-navbar-brand"><a href="index.html"><img src="images/logo.png" alt=""/></a></div>
+                    <div class="rd-navbar-sidebar-search">
+                      <input class="form-control" type="text" placeholder="Search"/>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-sm btn-navbar-panel rd-navbar-sidebar-toggle" data-navigation-switch="data-navigation-switch"><span class="linearicons-menu"></span></button>
+              </div>
+              <ul class="rd-navbar-nav">
+                <li class="rd-navbar-nav-item">
+                  <div class="rd-navbar-title"><span class="rd-navbar-title-icon"><span class="fa-ellipsis-h"></span></span><span class="rd-navbar-title-text">Menu</span></div>
+                </li>
+                <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="index.html"><span class="rd-navbar-icon linearicons-icons2"></span><span class="rd-navbar-link-text">Dashboard</span></a>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <a class="rd-navbar-link" href="#.html"><span class="rd-navbar-icon linearicons-store"></span><span class="rd-navbar-link-text">Inventory management</span></a> 
+                  <ul class="rd-navbar-dropdown">
+                    <h3 style="font-size: 24px; color: #fff; font-weight: 600; margin-bottom: 60px;">Inventory Management</h3>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5>Inventory</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory_hub.html"></span>Dash board</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory-import.html"></span>Import</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory-import-10.html"></span>Status</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="picking-list-setting2.html"></span>Listing Monitor</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="listing-monitor-1.html"></span>Product Export Import Status</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory-delete-log.html"></span>Delete Logs</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory-block-unblock-flag.html"></span>Block Unblock Logs</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="product-catalogue.html"></span>Product Catalogue</a></li>
+                      </div>
+                      <div class="col-sm-6">
+                        <h5>eBay Inventory </h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="ebay_listing_template.html"></span>eBay listed items</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="ebay-dashboard.html"></span>Dash board</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Assign Category SKUS</a></li>
+                        <br>
+                        <h5>Website </h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Assign category SKUS</a></li>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-top: 60px">
+                      <div class="col-sm-6">
+                        <h5>Amazon Repricing</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="product-catalogue.html"></span>Catalogue</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="amazon-pricing-inventory.html"></span>Repricing Status </a></li>
+                      </div>
+                      <div class="col-sm-6">
+                        <h5>Warehouse </h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="supplier-management.html"></span>Supplier Management</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="stock-movement-log.html"></span>Stock Movement Log</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="stock-take-inventory.html"></span>Stock Take Inventory </a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="warehouse-stock-locations-tabs.html"></span>Stock Locations </a></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-cube"></span><span class="rd-navbar-link-text">Order management</span></a>
+                  <ul class="rd-navbar-dropdown">
+                    <h3 style="font-size: 24px; color: #fff; font-weight: 600; margin-bottom: 60px;">Order Management</h3>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5>Order Dashboard</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="order-dashboard.html"></span>Scan Pack Ship</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="scan-pack-ship-export.html"></span>Scan Pack Ship Export</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="order-export-status-monitor.html"></span>Order Export Status Monitor</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="scanpackship-log.html"></span>Scanpackship Log</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Print Log</a></li>
+                      </div>
+                      <div class="col-sm-6">
+                        <h5>Customer Services</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="manual-telephone-order.html"></span>Manual Telephone Order</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="fba-orders.html"></span>FBA Orders</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Order History and Status</a></li>
+                        <br>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Deliver Pending Orders</a></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-document"></span><span class="rd-navbar-link-text">Reports</span></a>
+                  <ul class="rd-navbar-dropdown">
+                    <h3 style="font-size: 24px; color: #fff; font-weight: 600; margin-bottom: 60px;">Reports</h3>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5>Reports</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="sales-report.html"></span>Sales Reports</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="shipping-cost-reports.html"></span>Shipping Cost Reports</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="vat-report.html"></span>Vat Reports</a></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-cog"></span><span class="rd-navbar-link-text">Settings</span></a>
+                  <ul class="rd-navbar-dropdown">
+                    <h3 style="font-size: 24px; color: #fff; font-weight: 600; margin-bottom: 60px;">Settings</h3>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5>Order Management Settings</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="picking-list-setting2.html"></span>Picking List Design</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="shipping-carrier.html"></span>Shipping Carrier Configuration</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Shipping Edit Carrier Configuration</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Shipping Edit Dpd Carrier Configuration</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Product Export Import Status</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Shipping Edit Interlink Carrier Configuration</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Shipping Edit Parcelforce Carrier Configuration</a></li>
+                      </div>
+                      <div class="col-sm-6">
+                        <h5>Organisation</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="user-setting-1.html"></span>User Settings</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="organisation-setting.html"></span>Organisation Settings</a></li>
+                        <br>
+                        <h5>Marketplace Settings</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="marketplace-accounts.html"></span>Add and Edit new Marketplaces</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="optimise-profiles.html"></span>Optimise Profiles</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="ebay-order-download-setting.html"></span>Ebay Order Download Settings</a></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-link2"></span><span class="rd-navbar-link-text">Quick Links</span></a>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <div class="rd-navbar-title"><span class="rd-navbar-title-icon"><span class="fa-ellipsis-h"></span></span><span class="rd-navbar-title-text">SUPPORT</span></div>
+                </li>
+                <li class="rd-navbar-nav-item "><a class="rd-navbar-link" href="index.html"><span class="rd-navbar-icon linearicons-question"></span><span class="rd-navbar-link-text">Need Help?</span></a>
+                </li>
+                <li class="rd-navbar-nav-item "><a class="rd-navbar-link" href="index.html"><span class="rd-navbar-icon linearicons-telephone2"></span><span class="rd-navbar-link-text">Contact Us </span></a>
+                </li>
+                <li class="rd-navbar-nav-item "><a class="rd-navbar-link" href="index.html"><span class="rd-navbar-icon linearicons-dice"></span><span class="rd-navbar-link-text">Knowledge Base</span></a>
+                </li>
+                <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="#"><span class="rd-navbar-icon fa-columns"></span><span class="rd-navbar-link-text"> Contact Us</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+	  <section class="orderdashboard px-4">
+			<div class="row">
+				<div class="col-lg-12 common-sec border-bottom">	
+					<div class="row justify-content-center align-items-center">	
+						<div class="col-lg-2 p-4">	
+							<p><i class="mdi-filter-outline mr-2"></i>Filter and Order of Display</p>	
+						</div>	
+						<div class="col-lg-4 border-right border-left p-4">	
+									<ul class="d-flex pl-2">	
+										<li class="calendar-sec mr-2">	
+											<i class="linearicons-calendar-empty"></i><input class="form-control order-stage text-center" id="standardInput" type="text" placeholder="Date"><span class="fa-unsorted"></span>	
+										</li>	
+										<li class="mr-2">	
+											<input class="form-control order-stage" id="standardInput" type="text" placeholder="Order stage">	
+										</li>	
+										<li>	
+											<button class="btn btn-block btn-orange p-2 text-white orange-but" type="button">Apply</button>	
+										</li>	
+									</ul>	
+						</div>	
+						<div class="col-lg-6 print-but-sec">	
+							<ul class="third-but-sec d-flex justify-content-around pl-0">	
+									<li class="top-btn mr-1">	
+										<button class="btn btn-block btn-secondary p-2" type="button"><i class="linearicons-printer mr-1"></i>Print Picking List</button>	
+									</li>	
+									<li class="top-btn mr-1">	
+										<button class="btn btn-block btn-orange p-2 text-white" type="button"><i class="linearicons-move mr-1"></i>Move Order Stage</button>	
+									</li>	
+									<li class="top-btn mr-1">	
+										<button class="btn btn-block btn-dark p-2" type="button"><img src="images/lock.svg" class="mr-1">Print Invoice/Label</button>	
+									</li>	
+									<li class="mr-1">	
+										<div class="btn-group btn-sec border">	
+											<button class="btn btn-white p-2 border-right" type="button"><span class="fa-edit"></span></button>	
+											<button class="btn btn-white p-2 border-right" type="button"><span class="fa-file-pdf-o"></span></button>	
+											<button class="btn btn-white p-2 border-right" type="button"><span class="linearicons-printer"></span></button>	
+											<button class="btn btn-white p-2 border-right" type="button"><span class="fa-envelope-o"></span></button>	
+											<span class="more-sec ">More</span>	
+											<button class="btn btn-white p-2" type="button"><span class="fa-unsorted"></span></button>	
+										</div>	
+									</li>	
+								</ul>	
+						</div>	
+					</div>	
+				</div>
+					<div class="col-lg-2 col-md-6 first-background-sec">
+						<div class="first-sec mx-2 mt-4">
+							<div class="col-lg-12">
+							  <p class="filter-content mb-3"><i class="mdi-filter-outline mr-2"></i>Filter and Order of Display</p>
+							</div>
+							<div class="col-lg-12 px-0 mt-4">
+								<div class="panel admin-panel border">
+									<div class="panel-header border-bottom-0">
+									  <div class="d-flex align-items-center">
+										<div class="h6 panel-title flex-grow-1 first-panel-header">Filter and Order of Display</div>
+										<div class="admin-panel-buttons">
+										  <button class="admin-panel-button fa-window-minimize" title="collapse" data-panel="collapse"></button>
+										</div>
+										<div class="admin-panel-switch fa-bars"></div>
+									  </div>
+									</div>
+									<div class="panel-body" style="box-sizing: border-box; display: block;">
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">Amazon (2)</label>
+											  </div>
+											  <div><i class="mdi-dots-horizontal"></i></div>
+									  </div>
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">eBay (4)<i class="mdi-dots-horizontal"></i></label>
+											  </div>
+									  </div>
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">Website (4)<i class="mdi-dots-horizontal"></i></label>
+											  </div>
+										</div>
+										<div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											 <div class="form-check form-check-inline mt-1">
+												<input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												<label class="form-check-label" for="inlineCheckbox1">Amazon Marketplace (6)<i class="mdi-dots-horizontal"></i></label>
+											 </div>
+										</div>
+									</div>
+								</div>
+								<div class="panel admin-panel border">
+									<div class="panel-header border-bottom-0">
+									  <div class="d-flex align-items-center">
+										<div class="h6 panel-title flex-grow-1 first-panel-header">Shipping Service</div>
+										<div class="admin-panel-buttons">
+										  <button class="admin-panel-button fa-window-minimize" title="collapse" data-panel="collapse"></button>
+										</div>
+										<div class="admin-panel-switch fa-bars"></div>
+									  </div>
+									</div>
+									<div class="panel-body" style="box-sizing: border-box; display: block;">
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">Amazon (2)</label>
+											  </div>
+											  <div><i class="mdi-dots-horizontal"></i></div>
+									  </div>
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">eBay (4)<i class="mdi-dots-horizontal"></i></label>
+											  </div>
+									  </div>
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">Website (4)<i class="mdi-dots-horizontal"></i></label>
+											  </div>
+										</div>
+										<div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											 <div class="form-check form-check-inline mt-1">
+												<input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												<label class="form-check-label" for="inlineCheckbox1">Amazon Marketplace (6)<i class="mdi-dots-horizontal"></i></label>
+											 </div>
+										</div>
+									</div>
+								</div><div class="panel admin-panel border">
+									<div class="panel-header border-bottom-0">
+									  <div class="d-flex align-items-center">
+										<div class="h6 panel-title flex-grow-1 first-panel-header">Country Orders</div>
+										<div class="admin-panel-buttons">
+										  <button class="admin-panel-button fa-window-minimize" title="collapse" data-panel="collapse"></button>
+										</div>
+										<div class="admin-panel-switch fa-bars"></div>
+									  </div>
+									</div>
+									<div class="panel-body" style="box-sizing: border-box; display: block;">
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">Amazon (2)</label>
+											  </div>
+											  <div><i class="mdi-dots-horizontal"></i></div>
+									  </div>
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">eBay (4)<i class="mdi-dots-horizontal"></i></label>
+											  </div>
+									  </div>
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">Website (4)<i class="mdi-dots-horizontal"></i></label>
+											  </div>
+										</div>
+										<div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											 <div class="form-check form-check-inline mt-1">
+												<input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												<label class="form-check-label" for="inlineCheckbox1">Amazon Marketplace (6)<i class="mdi-dots-horizontal"></i></label>
+											 </div>
+										</div>
+									</div>
+								</div>
+								<div class="panel admin-panel border">
+									<div class="panel-header border-bottom-0">
+									  <div class="d-flex align-items-center">
+										<div class="h6 panel-title flex-grow-1 first-panel-header">Single Item Orders</div>
+										<div class="admin-panel-buttons">
+										  <button class="admin-panel-button fa-window-minimize" title="collapse" data-panel="collapse"></button>
+										</div>
+										<div class="admin-panel-switch fa-bars"></div>
+									  </div>
+									</div>
+									<div class="panel-body" style="box-sizing: border-box; display: block;">
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">Amazon (2)</label>
+											  </div>
+											  <div><i class="mdi-dots-horizontal"></i></div>
+									  </div>
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">eBay (4)<i class="mdi-dots-horizontal"></i></label>
+											  </div>
+									  </div>
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">Website (4)<i class="mdi-dots-horizontal"></i></label>
+											  </div>
+										</div>
+										<div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											 <div class="form-check form-check-inline mt-1">
+												<input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												<label class="form-check-label" for="inlineCheckbox1">Amazon Marketplace (6)<i class="mdi-dots-horizontal"></i></label>
+											 </div>
+										</div>
+									</div>
+								</div>
+								<div class="panel admin-panel border">
+									<div class="panel-header border-bottom-0">
+									  <div class="d-flex align-items-center">
+										<div class="h6 panel-title flex-grow-1 first-panel-header">Items that are out of stock</div>
+										<div class="admin-panel-buttons">
+										  <button class="admin-panel-button fa-window-minimize" title="collapse" data-panel="collapse"></button>
+										</div>
+										<div class="admin-panel-switch fa-bars"></div>
+									  </div>
+									</div>
+									<div class="panel-body" style="box-sizing: border-box; display: block;">
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">Amazon (2)</label>
+											  </div>
+											  <div><i class="mdi-dots-horizontal"></i></div>
+									  </div>
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">eBay (4)<i class="mdi-dots-horizontal"></i></label>
+											  </div>
+									  </div>
+									  <div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											  <div class="form-check form-check-inline mt-1">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1">Website (4)<i class="mdi-dots-horizontal"></i></label>
+											  </div>
+										</div>
+										<div class="show-sec border p-1 mb-2 d-flex align-items-center">
+											 <div class="form-check form-check-inline mt-1">
+												<input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												<label class="form-check-label" for="inlineCheckbox1">Amazon Marketplace (6)<i class="mdi-dots-horizontal"></i></label>
+											 </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 second-border-sec">
+						<div class="second-sec mt-4">
+							<ul class="d-flex pl-3 filter-content">
+								<li class="calendar-sec mr-1">
+									<i class="linearicons-calendar-empty"></i><input class="form-control order-stage text-center" id="standardInput" type="text" placeholder="Date"><span class="fa-unsorted"></span>
+								</li>
+								<li class="mr-1">
+									<input class="form-control order-stage" id="standardInput" type="text" placeholder="Order stage">
+								</li>
+								<li class="mr-3">
+									<button class="btn btn-block btn-orange p-2 text-white mr-4" type="button">Apply</button>
+								</li>
+							</ul>
+							<div class="overflow-sec mt-4">
+								<div class="col-lg-12 col-md-12">
+									<select class="form-control" id="standardSelect">
+										<option>SKU/Barcode</option>
+										<option>2</option>
+									 </select>
+								</div>
+								<div class="col-lg-12 col-md-12 mt-3">
+									<div class="search-bar">
+										  <div class="sidebar-search-new">
+											<input class="form-control" type="text" placeholder="Search">
+										  </div>
+									</div>
+								</div>
+								<p class="display">Displaying filtered results</p>
+								<div class="col-lg-12 col-md-12 select-top-sec">
+									<ul class="d-flex pl-0 small-text my-3 pt-4 justify-content-between">
+										<li>
+											<div class="form-check form-check-inline select-sec mt-1">
+											  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+											  <label class="form-check-label" for="inlineCheckbox1"><strong>Select All</strong></label>
+											</div>
+										</li>
+										<li class="mt-1">
+											<span>Total count</span>
+										</li>
+										<li class="page-sec">
+											<select class="form-control ml-1 mr-1" id="standardSelect">
+												<option>10 per page</option>
+												<option>2</option>
+											 </select>
+										</li>
+										<li class="ml-2 mt-1">
+											<p><img src="images/arrow-right.svg"><span class="mx-1">1-10</span><img class="mt-0" src="images/arrow-left.svg"></p>
+										</li>
+									</ul>
+								</div>
+								<div class="black-hover border-top">
+									<div class="col-lg-12 col-md-12 py-2">
+										<ul class="d-flex pl-0 small-text my-2 justify-content-between">
+											<li>
+												<div class="form-check form-check-inline">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1"><strong>Amazon - Universal Markets</strong></label>
+												</div>
+											</li>
+											<li><span class="badge badge-secondary">New</span></li>
+											<li><span>£29.49</span></li>
+										</ul>
+										<ul class="d-flex pl-0 small-text my-2 justify-content-between">
+											<li><span class="num-sec">206-9872-9879-99</span> <span>| 05/11/2020</span></li>
+											<li><span>No. of SKUs: 1</span></li>
+										</ul>
+										<div class="border-hover-sec">
+											<ul class="d-flex pl-0 small-text my-2">
+												<li class="d-flex justify-content-between"><span><strong>Ship By Date</strong>: 12/11/2020</span><span><strong>Shipping Method</strong>: Standard</span><span><strong>Carrier assigned</strong>: RM 40Signed</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="black-hover border-top">
+									<div class="col-lg-12 col-md-12 py-2">
+										<ul class="d-flex pl-0 small-text my-2 justify-content-between">
+											<li>
+												<div class="form-check form-check-inline">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1"><strong>Amazon - Universal Markets</strong></label>
+												</div>
+											</li>
+											<li><span class="badge ship-sec">Shipped</span></li>
+											<li><span>£29.49</span></li>
+										</ul>
+										<ul class="d-flex pl-0 small-text my-2 justify-content-between">
+											<li><span class="num-sec">206-9872-9879-99</span> <span>| 05/11/2020</span></li>
+											<li><span>No. of SKUs: 1</span></li>
+										</ul>
+										<div class="border-hover-sec">
+											<ul class="d-flex pl-0 small-text my-2">
+												<li class="d-flex justify-content-between"><span><strong>Ship By Date</strong>: 12/11/2020</span><span><strong>Shipping Method</strong>: Standard</span><span><strong>Carrier assigned</strong>: RM 40Signed</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="black-hover border-top">
+									<div class="col-lg-12 col-md-12 py-2">
+										<ul class="d-flex pl-0 small-text my-2 justify-content-between">
+											<li>
+												<div class="form-check form-check-inline">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1"><strong>Amazon - Universal Markets</strong></label>
+												</div>
+											</li>
+											<li><span class="badge badge-secondary">New</span></li>
+											<li><span>£29.49</span></li>
+										</ul>
+										<ul class="d-flex pl-0 small-text my-2 justify-content-between">
+											<li><span class="num-sec">206-9872-9879-99</span> <span>| 05/11/2020</span></li>
+											<li><span>No. of SKUs: 1</span></li>
+										</ul>
+										<div class="border-hover-sec">
+											<ul class="d-flex pl-0 small-text my-2">
+												<li class="d-flex justify-content-between"><span><strong>Ship By Date</strong>: 12/11/2020</span><span><strong>Shipping Method</strong>: Standard</span><span><strong>Carrier assigned</strong>: RM 40Signed</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="black-hover border-top">
+									<div class="col-lg-12 col-md-12 py-2">
+										<ul class="d-flex pl-0 small-text my-2 justify-content-between">
+											<li>
+												<div class="form-check form-check-inline">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1"><strong>Amazon - Universal Markets</strong></label>
+												</div>
+											</li>
+											<li><span class="badge badge-secondary">New</span></li>
+											<li><span>£29.49</span></li>
+										</ul>
+										<ul class="d-flex pl-0 small-text my-2 justify-content-between">
+											<li><span class="num-sec">206-9872-9879-99</span> <span>| 05/11/2020</span></li>
+											<li><span>No. of SKUs: 1</span></li>
+										</ul>
+										<div class="border-hover-sec">
+											<ul class="d-flex pl-0 small-text my-2">
+												<li class="d-flex justify-content-between"><span><strong>Ship By Date</strong>: 12/11/2020</span><span><strong>Shipping Method</strong>: Standard</span><span><strong>Carrier assigned</strong>: RM 40Signed</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="black-hover border-top">
+									<div class="col-lg-12 col-md-12 py-2">
+										<ul class="d-flex pl-0 small-text my-2 justify-content-between">
+											<li>
+												<div class="form-check form-check-inline">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1"><strong>Amazon - Universal Markets</strong></label>
+												</div>
+											</li>
+											<li><span class="badge badge-secondary">New</span></li>
+											<li><span>£29.49</span></li>
+										</ul>
+										<ul class="d-flex pl-0 small-text my-2 justify-content-between">
+											<li><span class="num-sec">206-9872-9879-99</span> <span>| 05/11/2020</span></li>
+											<li><span>No. of SKUs: 1</span></li>
+										</ul>
+										<div class="border-hover-sec">
+											<ul class="d-flex pl-0 small-text my-2">
+												<li class="d-flex justify-content-between"><span><strong>Ship By Date</strong>: 12/11/2020</span><span><strong>Shipping Method</strong>: Standard</span><span><strong>Carrier assigned</strong>: RM 40Signed</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="black-hover border-top">
+									<div class="col-lg-12 col-md-12 py-2">
+										<ul class="d-flex pl-0 small-text my-2 justify-content-between">
+											<li>
+												<div class="form-check form-check-inline">
+												  <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
+												  <label class="form-check-label" for="inlineCheckbox1"><strong>Amazon - Universal Markets</strong></label>
+												</div>
+											</li>
+											<li><span class="badge badge-secondary">New</span></li>
+											<li><span>£29.49</span></li>
+										</ul>
+										<ul class="d-flex pl-0 small-text my-2 justify-content-between">
+											<li><span class="num-sec">206-9872-9879-99</span> <span>| 05/11/2020</span></li>
+											<li><span>No. of SKUs: 1</span></li>
+										</ul>
+										<div class="border-hover-sec">
+											<ul class="d-flex pl-0 small-text my-2">
+												<li class="d-flex justify-content-between"><span><strong>Ship By Date</strong>: 12/11/2020</span><span><strong>Shipping Method</strong>: Standard</span><span><strong>Carrier assigned</strong>: RM 40Signed</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 third-gap-sec">
+						<div class="third-sec">
+							<ul class="third-but-sec px-0 filter-content">
+								<li class="top-btn mr-1">
+									<button class="btn btn-block btn-secondary p-2" type="button"><i class="linearicons-printer mr-1"></i>Print Picking List</button>
+								</li>
+								<li class="top-btn mr-1">
+									<button class="btn btn-block btn-orange p-2 text-white" type="button"><i class="linearicons-move mr-1"></i>Move Order Stage</button>
+								</li>
+								<li class="top-btn mr-1">
+									<button class="btn btn-block btn-dark p-2" type="button"><img src="images/lock.svg" class="mr-1">Print Invoice/Label</button>
+								</li>
+								<li class="top-btn mr-1">
+									<div class="btn-group btn-sec border">
+										<button class="btn btn-white p-2 border-right" type="button"><span class="fa-edit"></span></button>
+										<button class="btn btn-white p-2 border-right" type="button"><span class="fa-file-pdf-o"></span></button>
+										<button class="btn btn-white p-2 border-right" type="button"><span class="linearicons-printer"></span></button>
+										<button class="btn btn-white p-2 border-right" type="button"><span class="fa-envelope-o"></span></button>
+										<span class="more-sec">More</span>
+										<button class="btn btn-white p-2" type="button"><span class="fa-unsorted"></span></button>
+									</div>
+								</li>
+							</ul>
+							<div class="col-md-12 col-lg-12 px-0">
+							  <div class="tabs tabs-vertical-top tabs-border">
+								<ul class="nav nav-tabs nav-fill scroller scroller-horizontal active" role="tablist">
+								  <li class="nav-item"><a class="nav-link active border-blue color-tab p-3" data-toggle="tab" href="#panelTab13-1" role="tab" aria-selected="true">Overview</a></li>
+								  <li class="nav-item"><a class="nav-link border-blue color-tab p-3" data-toggle="tab" href="#panelTab13-2" role="tab" aria-selected="false">Commets</a></li>
+								  <li class="nav-item"><a class="nav-link border-blue color-tab p-3" data-toggle="tab" href="#panelTab13-3" role="tab" aria-selected="false">History</a></li>
+								  <li class="nav-item"><a class="nav-link border-blue color-tab p-3" data-toggle="tab" href="#panelTab13-1" role="tab" aria-selected="true">Returns</a></li>
+								  <li class="nav-item"><a class="nav-link border-blue color-tab p-3" data-toggle="tab" href="#panelTab13-2" role="tab" aria-selected="false">Refunds</a></li>
+								  <li class="nav-item"><a class="nav-link border-blue color-tab p-3" data-toggle="tab" href="#panelTab13-3" role="tab" aria-selected="false">Shipping Options</a></li>
+								</ul>
+								<div class="third-background-sec p-3">
+								<div class="tab-content pt-0">
+								  <div class="tab-pane fade active show" id="panelTab13-1" role="tabpanel">
+									<div class="row bc-sec">
+											<div class="col-6 col-sm-6 col-lg-6 col-md-6 col-xxl-8">
+												<img src="images/logo-d.png">
+											</div>
+											<div class="col-6 col-sm-6 col-lg-6 col-md-6 col-xxl-4 text-right">
+												<p class="uk-sec">United Kingdom<br>
+												<span> VAT GB12345678</span></p>
+											</div>
+									</div>
+									<div class="d-flex panel-sec my-4">
+										<div class="col-5 col-md-4 col-lg-4 col-xxl-4 ship-sec">
+											  <div class="panel rounded-0">
+												<div class="panel-header border-bottom-0 px-0">
+												  <div class="group-5 d-flex flex-wrap align-items-center justify-content-between">
+													<h6 class="panel-title"><strong>Ship To</strong></h6>
+												  </div>
+												</div>
+												<div class="panel-body py-0 px-0">
+												  <address>
+													<ul class="list-unstyled">
+													  <li>Glyndebourne Shop</li>
+													  <li>Lewes, East Sussex</li>
+													  <li>BN8 5UU</li>
+													</ul>
+												  </address>
+												</div>
+											  </div>
+										</div>
+										<div class="col-7 col-md-6 col-lg-6 col-xxl-6 ship-sec border-left">
+										  <div class="panel rounded-0">
+											<div class="panel-header border-bottom-0">
+											  <div class="group-5 d-flex flex-wrap align-items-center justify-content-between">
+												<h6 class="panel-title"><strong>Bill To</strong><span class="panel-icon fa-edit ml-2"></span></h6>
+											  </div>
+											</div>
+											<div class="panel-body py-0">
+											  <address>
+												<ul class="list-unstyled">
+												  <li>Glyndebourne Shop</li>
+												  <li>Lewes, East Sussex</li>
+												  <li>BN8 5UU</li>
+												</ul>
+											  </address>
+											</div>
+										  </div>
+										</div>
+									</div>
+									<div class="col-lg-12 my-3">
+										<div class="row">
+											<div class="col-lg-8 col-md-8 col-sm-8 col-8 ship-sec">
+												<p class="content-sec">Lorem ipsum dolor sit amet, consectetur</p>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4 col-4 text-left ship-sec">
+												<p class="invoice-sec"><strong>INVOICE NO: F5678A</strong></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 ship-sec">
+									  <div class="table-responsive">
+										<table class="table">
+										  <thead>
+											<tr>
+											  <th>No</th>
+											  <th>Item</th>
+											  <th>Price</th>
+											  <th >Qty</th>
+											  <th class="qty-sec">Qty Requested</th>
+											  <th>Binlocation</th>
+											  <th class="table-color"></th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <td>1</td>
+											  <td class="text-col">Lorem ipsum item description sample dolor sel amet</td>
+											  <td>£150.00</td>
+											  <td>1</td>
+											  <td>6</td>
+											  <td>001001</td>
+											  <td class="table-color">£150.00</td>
+											</tr>
+											<tr>
+											  <td>2</td>
+											  <td class="text-col">Sample item product description</td>
+											  <td>$350.00</td>										  
+											  <td>3</td>
+											  <td>3</td>
+											  <td>001246</td>
+											  <td class="table-color">£1050.00</td>
+											</tr>
+											<tr>
+											  <td>3</td>
+											  <td class="text-col">another lorem ipsum sample dolor sel product</td>
+											  <td>$430.00</td>
+											  <td>2</td>
+											  <td>2</td>
+											  <td>001001</td>
+											  <td class="table-color">£860.00</td>
+											</tr>
+											<tr>
+											  <td>4</td>
+											  <td class="text-col">product lorem ipsum</td>
+											  <td>$50.00</td>
+											  <td>1</td>
+											  <td>2</td>
+											  <td>001758</td>
+											  <td class="table-color">£50.00</td>
+											</tr>
+										  </tbody>
+										</table>
+									  </div>
+									</div>
+									<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<div class="d-flex justify-content-between">
+												<div class="col-lg-6 col-md-4 col-sm-4 due-sec">
+												  <p class="text-black mt-3">TOTAL DUE</p>
+												  <img class="img-num" src="images/Rectangle 38.png">
+												  <span class="num-img"><b>£2.110,00</b></span>
+												</div>
+												<div class="col-md-4 col-lg-6 col-sm-6 subtotal-sec text-right">
+												  <table class="table subtotal-table">
+													<thead>
+													  <tr>
+														<th class="border-top-0 sub-tab"><b>SUBTOTAL:</b></th>
+														<td class="border-top-0">£2.110,00</td>
+													  </tr>
+													</thead>
+													<tbody>
+													  <tr>
+														<td class="tax-tab"><b>TAX:</b></td>
+														<td class="tax-tab">0</td>
+													  </tr>
+													  <tr>
+														<td class="tax-tab"><b>GRANDTOTAL:</b></td>
+														<td class="num-sec tax-tab">£2.110,00</td>
+													  </tr>
+													</tbody>
+												  </table>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+										<h6 class="terms-sec"><b>Billing & Shipping Details</b></h6>
+											<ul class="billing-sec mt-3 pl-0">
+												<li class="royal-sec">Assigned courier:<span class="royal-underline"><b>Royal Mail</b></span></li>
+												<li class="royal-sec"><span class="fa-edit mr-2"></span>Courier selected by customer:<span class="royal-underline"><b>Royal Mail</b></span></li>
+												<li class="royal-sec">EAN:<span class="royal-color">#387549875</span></li>
+											</ul>
+											<ul class="billing-sec my-3 pl-0">
+												<li class="royal-sec">Assigned Shipping:<b>Someone</b></li>
+												<li class="royal-sec">Order Stage:<b>Packed</b></li>
+												<li class="royal-sec">Order Stage:<b>Packed</b></li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<h6 class="terms-sec"><b>Terms & Conditions</b></h6>
+											<p class="last-sec">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</div>
+								  </div>
+								  <div class="tab-pane fade" id="panelTab13-2" role="tabpanel">Sed ut perspiciatis suscipit laboriosam, nisiconsequatur.</div>
+								  <div class="tab-pane fade" id="panelTab13-2" role="tabpanel">Sed ut perspiciatis suscipit laboriosam, nisiconsequatur.</div>
+								  <div class="tab-pane fade" id="panelTab13-2" role="tabpanel">Sed ut perspiciatis suscipit laboriosam, nisiconsequatur.</div>
+								  <div class="tab-pane fade" id="panelTab13-2" role="tabpanel">Sed ut perspiciatis suscipit laboriosam, nisiconsequatur.</div>
+								  <div class="tab-pane fade" id="panelTab13-3" role="tabpanel">At vero eos s qui blanditiis praesentium voluptatumue earum.</div>
+								</div>
+								</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+			</div>
+			
+		</section>
+	 </div>
+	</body>

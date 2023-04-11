@@ -1,0 +1,21 @@
+$fontfamily:  "Source Sans Pro", sans-serif !important;
+$h0: 48px;
+
+@mixin h0 {
+    font-family: $fontfamily;
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 48px;
+  }
+@mixin h1 {
+    font-family: $fontfamily;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+ }
+@mixin h2 {
+    font-family: $fontfamily;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+ }

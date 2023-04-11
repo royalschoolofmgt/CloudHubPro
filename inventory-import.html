@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html class="rd-navbar-sidebar-active page-small-footer" lang="en">
+
+<head>
+    <title>inventory-import</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Template Monster Admin Template">
+    <meta property="og:description"
+        content="brevis, barbatus clabulares aliquando convertam de dexter, peritus capio. devatio clemens habitio est.">
+    <meta property="og:image" content="http://digipunk.netii.net/images/radar.gif">
+    <meta property="og:url" content="http://digipunk.netii.net">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="components/base/base.css">
+    <link rel="stylesheet" type="text/css" href="html/css/style.css">
+    <link rel="stylesheet" type="text/css" href="html/css/marketstyle.css">
+    <link rel="stylesheet" href="custom/sidebar.css">
+    <link rel="stylesheet" href="custom/invent-import.css">
+    <script src="components/base/script.js"></script>
+</head>
+
+<body>
+    <div class="page bg-white">
+        <header class="section page-header">
+            <!--RD Navbar-->
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar">
+                    <div class="rd-navbar-panel">
+                        <div class="rd-navbar-panel-cell">
+                            <button class="btn btn-sm btn-navbar-panel rd-navbar-sidebar-toggle"
+                                data-navigation-switch="data-navigation-switch"><span
+                                    class="linearicons-menu"></span></button>
+                        </div>
+                        <div class="rd-navbar-panel-cell brd-none">
+                            <ul class="nav custom-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Inventory Management</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Order Management</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="rd-navbar-panel-center"></div>
+                        <div class="rd-navbar-panel-cell brd-none">
+                            <!-- Search -->
+                            <div class="rd-navbar-panel-cell rd-navbar-panel-cell-search">
+                                <div class="rd-navbar-sidebar-search">
+                                    <input class="form-control" type="text" placeholder="Search" />
+                                </div>
+                            </div>
+                            <div class="rd-navbar-subpanel" id="subpanel-chat">
+                                <div class="panel">
+                                    <div class="panel-header p-2">
+                                        <h6 class="panel-title"><span class="panel-icon fa-pencil"></span> <span>Chat
+                                                widget</span>
+                                        </h6>
+                                    </div>
+                                    <div class="panel-body scroller scroller-vertical p-2">
+                                        <div class="media media-cloud group-10">
+                                            <div class="media-item"><img src="images/users/user-02-50x50.jpg" width="50"
+                                                    height="50" alt="" /></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                                                </h6>
+                                                <div class="media-text">Cras sit amet nibh libero, in gravida nulla.
+                                                    Nulla vel metus scelerisque ante sollicitudin.</div>
+                                            </div>
+                                        </div>
+                                        <div class="media media-cloud flex-row-reverse group-10">
+                                            <div class="media-item"><img src="images/users/user-03-50x50.jpg" width="50"
+                                                    height="50" alt="" /></div>
+                                            <div class="media-body media-body-right-caret">
+                                                <h6 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                                                </h6>
+                                                <div class="media-text">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                                            </div>
+                                        </div>
+                                        <div class="media media-cloud group-10">
+                                            <div class="media-item"><img src="images/users/user-02-50x50.jpg" width="50"
+                                                    height="50" alt="" /></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                                                </h6>
+                                                <div class="media-text">Cras sit amet nibh libero, in gravida nulla.
+                                                    Nulla vel metus scelerisque ante sollicitudin.</div>
+                                            </div>
+                                        </div>
+                                        <div class="media media-cloud flex-row-reverse group-10">
+                                            <div class="media-item"><img src="images/users/user-03-50x50.jpg" width="50"
+                                                    height="50" alt="" /></div>
+                                            <div class="media-body media-body-right-caret">
+                                                <h6 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                                                </h6>
+                                                <div class="media-text">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer p-2">
+                                        <div class="input-group form-group">
+                                            <input class="form-control" type="text" placeholder="Enter your message" />
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary">Send</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rd-navbar-panel-cell brd-none">
+                            <button class="btn btn-sm btn-navbar-panel"
+                                data-multi-switch='{"targets":"#subpanel-notifications","scope":"#subpanel-notifications","isolate":"[data-multi-switch]"}'><span
+                                    class="linearicons-alarm"></span><span class="badge badge-primary">2</span></button>
+                            <div class="rd-navbar-subpanel" id="subpanel-notifications">
+                                <div class="panel">
+                                    <div class="panel-header">
+                                        <h6 class="panel-title"><span
+                                                class="panel-icon fa-bell"></span><span>Notifications</span></h6>
+                                    </div>
+                                    <div class="panel-body p-2 scroller scroller-vertical">
+                                        <div class="group-5">
+                                            <div class="alert alert-dismissible alert-primary alert-sm" role="alert">
+                                                <span class="alert-icon fa-telegram"></span><span>Message</span>
+                                                <button class="close" type="button" data-dismiss="alert"
+                                                    aria-label="Close"><span class="fa-close"
+                                                        aria-hidden="true"></span></button>
+                                            </div>
+                                            <div class="alert alert-dismissible alert-warning alert-sm" role="alert">
+                                                <span class="alert-icon fa-warning"></span><span>Warning</span>
+                                                <button class="close" type="button" data-dismiss="alert"
+                                                    aria-label="Close"><span class="fa-close"
+                                                        aria-hidden="true"></span></button>
+                                            </div>
+                                            <div class="alert alert-dismissible alert-danger alert-sm" role="alert">
+                                                <span class="alert-icon fa-remove"></span><span>Error</span>
+                                                <button class="close" type="button" data-dismiss="alert"
+                                                    aria-label="Close"><span class="fa-close"
+                                                        aria-hidden="true"></span></button>
+                                            </div>
+                                            <div class="alert alert-dismissible alert-success alert-sm" role="alert">
+                                                <span class="alert-icon fa-thumbs-up"></span><span>Success</span>
+                                                <button class="close" type="button" data-dismiss="alert"
+                                                    aria-label="Close"><span class="fa-close"
+                                                        aria-hidden="true"></span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer p-2"><a class="btn btn-primary btn-sm"
+                                            href="alerts.html">See more</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rd-navbar-panel-cell">
+                            <button class="btn btn-sm btn-navbar-panel"
+                                data-multi-switch='{"targets":".sidebar","scope":".sidebar","isolate":"[data-multi-switch]"}'><span
+                                    class="linearicons-ellipsis"></span></button>
+                        </div>
+                    </div>
+                    <div class="rd-navbar-sidebar scroller scroller-vertical">
+                        <div class="rd-navbar-sidebar-panel">
+                            <div>
+                                <div class="group-15">
+                                    <div class="rd-navbar-brand"><a href="index.html"><img src="images/logo.png"
+                                                alt="" /></a></div>
+                                    <div class="rd-navbar-sidebar-search">
+                                        <input class="form-control" type="text" placeholder="Search" />
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-sm btn-navbar-panel rd-navbar-sidebar-toggle"
+                                data-navigation-switch="data-navigation-switch"><span
+                                    class="linearicons-menu"></span></button>
+                        </div>
+                        <ul class="rd-navbar-nav">
+                            <li class="rd-navbar-nav-item">
+                                <div class="rd-navbar-title"><span class="rd-navbar-title-icon"><span
+                                            class="fa-ellipsis-h"></span></span><span
+                                        class="rd-navbar-title-text">Menu</span></div>
+                            </li>
+                            <li class="rd-navbar-nav-item active"><a class="rd-navbar-link" href="index.html"><span
+                                        class="rd-navbar-icon linearicons-icons2"></span><span
+                                        class="rd-navbar-link-text">Dashboard</span></a>
+                            </li>
+
+                            <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="#"><span
+                                        class="rd-navbar-icon linearicons-cog"></span><span
+                                        class="rd-navbar-link-text">Services</span></a>
+                            </li>
+                            <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="#"><span
+                                        class="rd-navbar-icon linearicons-store"></span><span
+                                        class="rd-navbar-link-text">Supplier</span></a>
+                            </li>
+                            <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="#"><span
+                                        class="rd-navbar-icon linearicons-users2"></span><span
+                                        class="rd-navbar-link-text">Management</span></a>
+                            </li>
+                            <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="#"><span
+                                        class="rd-navbar-icon linearicons-file-check"></span><span
+                                        class="rd-navbar-link-text">Purchase Orders</span></a>
+                            </li>
+                            <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="#"><span
+                                        class="rd-navbar-icon linearicons-link2"></span><span
+                                        class="rd-navbar-link-text">Quick Links</span></a>
+                            </li>
+                            <li class="rd-navbar-nav-item">
+                                <div class="rd-navbar-title"><span class="rd-navbar-title-icon"><span
+                                            class="fa-ellipsis-h"></span></span><span
+                                        class="rd-navbar-title-text">SUPPORT</span></div>
+                            </li>
+                            <li class="rd-navbar-nav-item "><a class="rd-navbar-link" href="index.html"><span
+                                        class="rd-navbar-icon linearicons-question"></span><span
+                                        class="rd-navbar-link-text">Need Help?</span></a>
+                            </li>
+                            <li class="rd-navbar-nav-item "><a class="rd-navbar-link" href="index.html"><span
+                                        class="rd-navbar-icon linearicons-telephone2"></span><span
+                                        class="rd-navbar-link-text">Contact Us </span></a>
+                            </li>
+                            <li class="rd-navbar-nav-item "><a class="rd-navbar-link" href="index.html"><span
+                                        class="rd-navbar-icon linearicons-dice"></span><span
+                                        class="rd-navbar-link-text">Knowledge Base</span></a>
+                            </li>
+
+                            <!--li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-cog"></span><span class="rd-navbar-link-text">Need Help?</span></a>
+                  <ul class="rd-navbar-dropdown">
+                    <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="admin-panels.html"><span class="rd-navbar-icon linearicons-grid"></span>Admin panels</a>
+                    </li>
+                    <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="admin-modals.html"><span class="rd-navbar-icon linearicons-exclude"></span>Admin modals</a>
+                    </li>
+                    <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="admin-dock.html"><span class="rd-navbar-icon linearicons-transform"></span>Admin Dock</a>
+                    </li>
+                  </ul>
+                </li-->
+                            <!--li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="#"><span class="rd-navbar-icon fa-columns"></span><span class="rd-navbar-link-text"> Contact Us</span></a>
+                  <ul class="rd-navbar-dropdown">
+                    <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="navbar.html"><span class="rd-navbar-icon linearicons-location"></span>Navbar</a>
+                    </li>
+                    <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-menu3"></span>Topbar</a>
+                      <ul class="rd-navbar-dropdown">
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="breadcrumbs.html">Breadcrumbs</a>
+                        </li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="topbar-menu.html">Topbar Menu</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-menu-square"></span>Content Body</a>
+                      <ul class="rd-navbar-dropdown">
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="blank-starter.html">Blank Starter</a>
+                        </li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="jumbotron.html">Jumbotron</a>
+                        </li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="content-tabs.html">Content Tabs</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li-->
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="inventory-import"> 
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item"> <a class="breadcrumbs-link" href="index.html">Home</a></li>
+              <li class="breadcrumbs-item"> <a class="breadcrumbs-link" href="index.html">Optimise</a>
+              </li>
+              <li class="breadcrumbs-item">Inventory Import
+              </li>
+            </ul>
+        <section class="marketplace">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <div class="orange-tab">
+                    <div class="panel-body border-top border-bottom py-0 pr-0 my-4">
+                        <ul class="nav nav-tabs scroller scroller-horizontal" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#panelTab16-1" role="tab"
+                                    aria-selected="true">All<span class="small-triangle"></span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link " data-toggle="tab" href="#panelTab16-2"
+                                    role="tab" aria-selected="false">Admin Template Mapping<span class="small-triangle"></span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#panelTab16-3" role="tab"
+                                    aria-selected="false">
+                                    Import Inventory Profile
+                                    <span class="small-triangle"></span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#panelTab16-4" role="tab"
+                                    aria-selected="true">Website
+                                    <span class="small-triangle"></span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#panelTab16-5" role="tab"
+                                    aria-selected="false"> Import Validation Only<span class="small-triangle"></span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="panelTab16-1" role="tabpanel">
+                    <div class="optimise-contnet px-2 mx-3">
+                                <div class="invent-data">
+                                    <p>Import Inventory Data</p>
+                                </div>
+                                <div class="row">
+                                            <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-12">
+                                                <p class="import-color">Import Profile</p>
+                                                <div class="form-group">
+
+                                                    <input class="form-control" id="standardInput" type="text">
+                                                </div>
+                                                <div>
+                                                    <p class="import-color">To add a new import inventory profile, please <span class="click-color">click here.</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-12">
+                                                <p class="import-color">File Location</p>
+                                                <div class="form-group">
+
+                                                    <input class="form-control choose" id="standardInput" type="text">
+                                                    <span class="choose-file">Choose file <i class="mdi-folder-upload"></i></span>
+                                                </div>
+                                                </div>
+                                                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-12">
+                                                <p class="import-color">Email Address</p>
+                                                <div class="form-group">
+
+                                                    <input class="form-control" id="standardInput" type="text">
+                                                </div>
+                                                <div>
+                                                    <p class="import-color">Separate e-mail addresses with commas.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12 col-xl-12 col-sm-12 col-12">
+                                                    <div class="but-right">
+                                                        <button class="btn btn-dark p-2 text-white orange-but mr-4" type="button">Reset</button>
+                                                        <button class="btn btn-orange p-2 text-white orange-but" type="button">Import</button>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                        <p class="text-black">Select Import template, dowload the sample file and import the file.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="table-responsive scroller scroller-horizontal mt-4">
+                                <table class="table table-color">
+                                  <thead>
+                                    <tr class="table">
+                                      <th class="text-black font-weight-normal" scope="col">Profile Name</th>
+                                      <th class="text-black font-weight-normal" scope="col"></th>
+                                      <th class="text-black font-weight-normal" scope="col"></th>
+                                      <th class="text-black font-weight-normal" scope="col"></th>
+                                      <th class="text-black font-weight-normal" scope="col"></th>
+                                      <th class="text-black font-weight-normal" scope="col"></th>
+                                      <th class="text-black font-weight-normal" scope="col"></th>
+                                      <th class="text-black font-weight-normal" scope="col"></th>
+                                      <th class="text-black font-weight-normal" scope="col">Download Template</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                    <td>
+                                        <div class="search">
+                                              <input class="form-control search-background" type="text" placeholder="Search">
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Master Template 233 Columns</td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td><i class="linearicons-download2"></i></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Test Webstore</td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td><i class="linearicons-download2"></i></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                </div>
+                                
+                        </div>
+                    </div>
+                <div class="tab-pane fade" id="panelTab16-2" role="tabpanel">
+                    <div class="optimise-contnet">
+                           <div class="tabs tabs-vertical-top tabs-border">
+                            <ul class="nav nav-tabs scroller scroller-horizontal px-2" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#priceProfiles-2" role="tab"
+                                            aria-selected="true">Create Profile</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#classifications-2" role="tab"
+                                            aria-selected="false">Template Column Mapping</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#formula" role="tab"
+                                            aria-selected="false">Formula and Validation Rules</a></li>
+                            </ul>
+                            <div class="tab-content px-4">
+                                <div class="tab-pane fade show active" id="priceProfiles-2" role="tabpanel">
+                                                         <div class="row">
+                                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-12">
+                                            <p class="import-color">Enter Profile Name</p>
+                                                <div class="form-group">
+                                                    <input class="form-control" id="standardInput" type="text">
+                                                </div>
+                                         </div>
+                                         <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-12">
+                                            <p class="import-color">Upload Master Template</p>
+                                                <div class="form-group">
+                                                    <input class="form-control choose" id="standardInput" type="text">
+                                                    <span class="choose-file">Choose file<i class="mdi-folder-upload"></i></span>
+                                                </div>
+                                        </div>
+                                         <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-12">
+                                            <p class="import-color">Header Row Position</p>
+                                                <div class="form-group">
+                                                    <input class="form-control" id="standardInput" type="text">
+                                                </div>
+                                         </div>
+                                         <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-12">
+                                            <p class="import-color">Data Row Position</p>
+                                                <div class="form-group">
+                                                    <input class="form-control" id="standardInput" type="text">
+                                                </div>
+                                         </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                        <div class="col-sm-12 col-12">
+                                            <div class="but-right">
+                                                <button class="btn btn-orange pl-5 pr-5 text-white orange-but" type="button">Save</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                        <div class="col-sm-12 col-12">
+                                           <p class="text-black">There are 1 Profiles.</p>
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                        <div class="table-responsive scroller scroller-horizontal mt-4 col-lg-12">
+                                            <table class="table table-color">
+                                                <thead>
+                                                    <tr class="table">
+                                                      <th class="text-black font-weight-normal" scope="col">Profile Name</th>
+                                                      <th class="text-black font-weight-normal" scope="col">View Template</th>
+                                                      <th class="text-black font-weight-normal" scope="col">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                    <td>Master Template 233 Columns</td>
+                                                    <td><i class="linearicons-download2"></i></td>
+                                                    <td>
+                                                   <div class="dropdown">
+                                                  <button class="btn dropdown-toggle border p-2" data-toggle="dropdown"><span>Edit</span>
+                                                  </button>
+                                                      <div class="dropdown-menu"><a class="dropdown-item" href="#">Option 1</a><a class="dropdown-item" href="#">Option 2</a><a class="dropdown-item" href="#">Option 3</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Option 4</a>
+                                                      </div>
+                                                    </div>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Test Webstore</td>
+                                                      <td><i class="linearicons-download2"></i></td>
+                                                      <td>
+                                                      <div class="dropdown">
+                                                  <button class="btn dropdown-toggle border p-2" data-toggle="dropdown"><span>Edit</span>
+                                                  </button>
+                                                      <div class="dropdown-menu"><a class="dropdown-item" href="#">Option 1</a><a class="dropdown-item" href="#">Option 2</a><a class="dropdown-item" href="#">Option 3</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Option 4</a>
+                                                      </div>
+                                                    </div>
+                                                      </td>
+                                                    </tr>
+                                              </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tab-pane fade" id="classifications-2" role="tabpanel">
+                                
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xl-6 col-sm-6 col-12">
+                                            <label class="form-label" for="standardInput">Select Profile</label>
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                  <option></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xl-6 col-sm-6 col-12">
+                                            <label class="form-label" for="standardInput">Select Inventory</label>
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                  <option></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-12 col-xl-4">
+                            <div class="text-black mb-3">
+                                Select Field from Import File
+                            </div>
+                                <div class="search-scroll">
+                          <div class="dual-listbox">
+                            <div class="searchicon">
+                              <input class="dual-listbox__search form-control" placeholder="Search">
+
+                              </div>
+                            <div class="dual-listbox__container mt-0">
+                              <div><ul class="dual-listbox__available">
+                                <li class="dual-listbox__item" data-id="1">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress</div>
+                                  <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="2">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress Envelope Delivery</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="3">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalvalue</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="4">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="5">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority H M Forces </div>
+                                     <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="6">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="7">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome (PO Boxes)</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="8">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europrioritybusiness</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="9">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">globalBulk Direct</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                               </ul>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                         </div>
+                         <div class="col-md-4 col-lg-4 col-sm-12 col-12 col-xl-4">
+                            <div class="text-black mb-3 map-class">
+                                Select 247 Cloudhub Field
+                            </div>
+                            <div class="search-scroll">
+                          <div class="dual-listbox">
+                            <div class="searchicon">
+                              <input class="dual-listbox__search form-control" placeholder="Search">
+
+                              </div>
+                            <div class="dual-listbox__container mt-0">
+                              <div><ul class="dual-listbox__available">
+                                <li class="dual-listbox__item" data-id="1">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress</div>
+                                  <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="2">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress Envelope Delivery</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="3">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalvalue</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="4">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="5">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority H M Forces </div>
+                                     <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="6">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="7">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome (PO Boxes)</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="8">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europrioritybusiness</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="9">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">globalBulk Direct</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-sm-12 col-12 col-xl-4">
+                            <div class="text-black mb-3 map-class">
+                                Mapped Columns
+                            </div>
+                            <div class="search-scroll">
+                          <div class="dual-listbox">
+                            <div class="searchicon">
+                              <input class="dual-listbox__search form-control" placeholder="Search">
+
+                              </div>
+                            <div class="dual-listbox__container mt-0">
+                              <div><ul class="dual-listbox__available">
+                                <li class="dual-listbox__item" data-id="1">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress</div>
+                                  <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="2">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress Envelope Delivery</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="3">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalvalue</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="4">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="5">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority H M Forces </div>
+                                     <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="6">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="7">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome (PO Boxes)</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="8">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europrioritybusiness</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="9">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">globalBulk Direct</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                         </div>
+                     </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12 my-2">
+                                                <p class="text-black">No Records Found!!!</p>
+                                            </div>
+                                            <div class=" col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12">
+                                                <button class="btn btn-orange pl-5 pr-5 text-white orange-but but-right map" type="button">Save</button>
+                                            </div>
+                                        </div>
+                                        
+                                    <div class="row">
+                                    <div class="table-responsive scroller scroller-horizontal col-lg-12">
+                                        <table class="table table-color">
+                                            <thead>
+                                                <tr class="table">
+                                                  <th class="text-black font-weight-normal" scope="col">Template Column</th>
+                                                  <th class="text-black font-weight-normal" scope="col">Table Column</th>
+                                                  <th class="text-black font-weight-normal" scope="col">Table Name</th>
+                                                  <th class="text-black font-weight-normal" scope="col">Mapping Column</th>
+                                                </tr>
+                                            </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                        <td><div class="search col-lg-8">
+                                                              <input class="form-control search-background" type="text" placeholder="Search">
+                                                        </div></td>
+                                                                        <td><div class="search col-lg-8">
+                                                              <input class="form-control search-background" type="text" placeholder="Search">
+                                                        </div></td>
+                                                        <td><div class="search col-lg-8">
+                                                              <input class="form-control search-background" type="text" placeholder="Search">
+                                                        </div></td>
+                                                        <td></td>
+                                                        </tr>
+                                                  </tbody>
+                                        </table>
+                                    </div>
+                                  </div>
+                                  
+                            </div>
+                                <div class="tab-pane fade" id="formula" role="tabpanel">
+                                    <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-xl-6 col-sm-6 col-12">
+                                        <label class="form-label" for="standardInput">Select Profile</label>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                            <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-4 col-lg-4 col-sm-4 col-12 col-xl-4">
+                                            <div class="text-black mb-3">
+                                                Select Field from Import File
+                                            </div>
+                                                <div class="search-scroll">
+                                          <div class="dual-listbox">
+                                            <div class="searchicon">
+                                              <input class="dual-listbox__search form-control" placeholder="Search">
+                                              </div>
+                                            <div class="dual-listbox__container mt-0">
+                                              <div><ul class="dual-listbox__available">
+                                                <li class="dual-listbox__item" data-id="1">
+                                                  <div class="d-flex justify-content-between">
+                                                    <div><img src="images/departures.svg" class="pr-2">globalexpress</div>
+                                                  <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                                  </div> 
+                                                </li>
+                                                <li class="dual-listbox__item" data-id="2">
+                                                  <div class="d-flex justify-content-between">
+                                                    <div><img src="images/departures.svg" class="pr-2">globalexpress Envelope Delivery</div>
+                                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                                  </div> 
+                                                </li>
+                                                <li class="dual-listbox__item" data-id="3">
+                                                  <div class="d-flex justify-content-between">
+                                                    <div><img src="images/departures.svg" class="pr-2">globalvalue</div>
+                                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                                  </div> 
+                                                </li>
+                                                <li class="dual-listbox__item" data-id="4">
+                                                  <div class="d-flex justify-content-between">
+                                                    <div><img src="images/departures.svg" class="pr-2">globalpriority</div>
+                                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                                  </div> 
+                                                </li>
+                                                <li class="dual-listbox__item" data-id="5">
+                                                  <div class="d-flex justify-content-between">
+                                                    <div><img src="images/departures.svg" class="pr-2">globalpriority H M Forces </div>
+                                                     <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                                  </div> 
+                                                </li>
+                                                <li class="dual-listbox__item" data-id="6">
+                                                  <div class="d-flex justify-content-between">
+                                                    <div><img src="images/note.svg" class="pr-2">europriorityhome</div>
+                                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                                  </div> 
+                                                </li>
+                                                <li class="dual-listbox__item" data-id="7">
+                                                  <div class="d-flex justify-content-between">
+                                                    <div><img src="images/note.svg" class="pr-2">europriorityhome (PO Boxes)</div>
+                                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                                  </div> 
+                                                </li>
+                                                <li class="dual-listbox__item" data-id="8">
+                                                  <div class="d-flex justify-content-between">
+                                                    <div><img src="images/note.svg" class="pr-2">europrioritybusiness</div>
+                                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                                  </div> 
+                                                </li>
+                                                <li class="dual-listbox__item" data-id="9">
+                                                  <div class="d-flex justify-content-between">
+                                                    <div><img src="images/note.svg" class="pr-2">globalBulk Direct</div>
+                                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                                  </div> 
+                                                </li>
+                                               </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </div>
+                                         </div>
+                                    </div>
+                         
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="text-black">No Records Found!!!</p>
+                        </div>
+                    </div>
+                    
+                        <div class="row">
+                        <div class="table-responsive scroller scroller-horizontal col-lg-12">
+                            <table class="table table-color">
+                                <thead>
+                                    <tr class="table">
+                                      <th class="text-black font-weight-normal" scope="col">Column</th>
+                                      <th class="text-black font-weight-normal" scope="col"></th>
+                                      <th class="text-black font-weight-normal" scope="col">Formula</th>
+                                      <th class="text-black font-weight-normal" scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td class="p-5"></td>
+                                    <td class="p-5"></td>
+                                    <td class="p-5"></td>
+                                    <td class="p-5"></td>
+                                    </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                   </div>
+                   </div>
+                </div>
+                <div class="tab-pane fade" id="panelTab16-3" role="tabpanel">
+                  <div class="optimise-contnet">
+                  <div class="tabs tabs-vertical-top tabs-border">
+                        
+                            <ul class="nav nav-tabs scroller scroller-horizontal px-2" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#priceProfiles-3" role="tab"
+                                            aria-selected="true">Create Profile</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#classifications-3" role="tab"
+                                            aria-selected="false">Template Column Mapping</a></li>
+                            </ul>
+                            <div class="tab-content px-4">
+                                <div class="tab-pane fade show active" id="priceProfiles-3" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-12">
+                                            <p class="import-color">Enter Profile Name</p>
+                                                <div class="form-group">
+                                                    <input class="form-control" id="standardInput" type="text">
+                                                </div>
+                                         </div>
+                                         <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-12">
+                                            <p class="import-color">Upload Master Template</p>
+                                                <div class="form-group">
+                                                    <input class="form-control choose" id="standardInput" type="text">
+                                                    <span class="choose-file">Choose file</span>
+                                                </div>
+                                        </div>
+                                         <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-12">
+                                            <p class="import-color">Header Row Position</p>
+                                                <div class="form-group">
+                                                    <input class="form-control" id="standardInput" type="text">
+                                                </div>
+                                         </div>
+                                         <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-12">
+                                            <p class="import-color">Data Row Position</p>
+                                                <div class="form-group">
+                                                    <input class="form-control" id="standardInput" type="text">
+                                                </div>
+                                         </div>
+                                         </div>
+                                         
+                                         <div class="row">
+                                            <div class="col-12 col-sm-12">
+                                                <div class="but-right">
+                                                    <button class="btn btn-orange pl-5 pr-5 text-white orange-but" type="button">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-sm-12 col-12">
+                                           <p class="text-black">There are 1 Profiles.</p>
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                        <div class="table-responsive scroller scroller-horizontal col-lg-12">
+                                            <table class="table table-color">
+                                                <thead>
+                                                    <tr class="table">
+                                                      <th class="text-black font-weight-normal" scope="col">Profile Name</th>
+                                                      <th class="text-black font-weight-normal" scope="col">Created By</th>
+                                                      <th class="text-black font-weight-normal" scope="col">Created On</th>
+                                                      <th class="text-black font-weight-normal" scope="col">View Template</th>
+                                                      <th class="text-black font-weight-normal" scope="col">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                    <td>Master Template 233 Columns</td>
+                                                    <td>Lorem ipsum dolor sit ame</td>
+                                                    <td>9/30/2019 9:03:36 AM</td>
+                                                    <td><i class="linearicons-download2"></i></td>
+                                                    <td>
+                                                   <div class="dropdown">
+                                                  <button class="btn dropdown-toggle border p-2" data-toggle="dropdown"><span>Edit</span>
+                                                  </button>
+                                                      <div class="dropdown-menu"><a class="dropdown-item" href="#">Option 1</a><a class="dropdown-item" href="#">Option 2</a><a class="dropdown-item" href="#">Option 3</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Option 4</a>
+                                                      </div>
+                                                    </div>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Test Webstore</td>
+                                                      <td>Ut enim ad minima</td>
+                                                      <td>9/30/2019 9:03:36 AM</td>
+                                                      <td><i class="linearicons-download2"></i></td>
+                                                      <td>
+                                                      <div class="dropdown">
+                                                  <button class="btn dropdown-toggle border p-2" data-toggle="dropdown"><span>Edit</span>
+                                                  </button>
+                                                      <div class="dropdown-menu"><a class="dropdown-item" href="#">Option 1</a><a class="dropdown-item" href="#">Option 2</a><a class="dropdown-item" href="#">Option 3</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Option 4</a>
+                                                      </div>
+                                                    </div>
+                                                      </td>
+                                                    </tr>
+                                              </tbody>
+                                            </table>
+                                        </div>
+                                   </div>
+                                   
+                                </div>
+                                <div class="tab-pane fade" id="classifications-3" role="tabpanel">
+                                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-12 col-xl-4">
+                            <div class="text-black mb-3">
+                                Select Field from Import File
+                            </div>
+                                <div class="search-scroll">
+                          <div class="dual-listbox">
+                            <div class="searchicon">
+                              <input class="dual-listbox__search form-control" placeholder="Search">
+
+                              </div>
+                            <div class="dual-listbox__container mt-0">
+                              <div><ul class="dual-listbox__available">
+                                <li class="dual-listbox__item" data-id="1">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress</div>
+                                  <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="2">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress Envelope Delivery</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="3">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalvalue</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="4">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="5">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority H M Forces </div>
+                                     <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="6">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="7">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome (PO Boxes)</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="8">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europrioritybusiness</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="9">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">globalBulk Direct</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                               </ul>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                         </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-12">
+                            <div class="text-black mb-3 map-class">
+                                Select 247 Cloudhub Field
+                            </div>
+                            <div class="search-scroll">
+                          <div class="dual-listbox">
+                            <div class="searchicon">
+                              <input class="dual-listbox__search form-control" placeholder="Search">
+
+                              </div>
+                            <div class="dual-listbox__container mt-0">
+                              <div><ul class="dual-listbox__available">
+                                <li class="dual-listbox__item" data-id="1">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress</div>
+                                  <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="2">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress Envelope Delivery</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="3">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalvalue</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="4">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="5">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority H M Forces </div>
+                                     <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="6">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="7">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome (PO Boxes)</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="8">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europrioritybusiness</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="9">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">globalBulk Direct</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-12">
+                            <div class="text-black mb-3 map-class">
+                                Mapped Columns
+                            </div>
+                            <div class="search-scroll">
+                          <div class="dual-listbox">
+                            <div class="searchicon">
+                              <input class="dual-listbox__search form-control" placeholder="Search">
+
+                              </div>
+                            <div class="dual-listbox__container mt-0">
+                              <div><ul class="dual-listbox__available">
+                                <li class="dual-listbox__item" data-id="1">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress</div>
+                                  <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="2">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress Envelope Delivery</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="3">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalvalue</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="4">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="5">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority H M Forces </div>
+                                     <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="6">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="7">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome (PO Boxes)</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="8">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europrioritybusiness</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="9">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">globalBulk Direct</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                         </div>
+                     </div>
+                     
+                    <div class="row">
+                        <div class="col-sm-6 col-12 my-2">
+                            <p class="text-black">No Records Found!!!</p>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <button class="btn btn-orange pl-5 pr-5 text-white orange-but but-right" type="button">Save</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="table-responsive scroller scroller-horizontal col-lg-12">
+                        <table class="table table-color">
+                            <thead>
+                                <tr class="table">
+                                  <th class="text-black font-weight-normal" scope="col">Template Column</th>
+                                  <th class="text-black font-weight-normal" scope="col">Table Column</th>
+                                  <th class="text-black font-weight-normal" scope="col">Table Name</th>
+                                  <th class="text-black font-weight-normal" scope="col">Mapping Column</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td><div class="search">
+                                          <input class="form-control search-background" type="text" placeholder="Search">
+                                    </div></td>
+                                                    <td><div class="search">
+                                          <input class="form-control search-background" type="text" placeholder="Search">
+                                    </div></td>
+                                                    <td><div class="search">
+                                          <input class="form-control search-background" type="text" placeholder="Search">
+                                    </div></td>
+                                <td></td>
+                                </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    </div>
+                    
+                                </div>
+                     </div>
+                        <!--tab-content ends here-->
+                   
+                  </div>
+                </div>
+             </div>
+                <div class="tab-pane fade" id="panelTab16-4" role="tabpanel">
+                    <div class="optimise-contnet">
+                           <div class="tabs tabs-vertical-top tabs-border">
+                            <ul class="nav nav-tabs scroller scroller-horizontal px-2" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#priceProfiles-4" role="tab"
+                                            aria-selected="true">Create Profile</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#classifications-4" role="tab"
+                                            aria-selected="false">Template Column Mapping</a></li>
+                                    </ul>
+                            <div class="tab-content px-4">
+                                <div class="tab-pane fade show active" id="priceProfiles-4" role="tabpanel">
+                                        <div class="row">
+                                        <div class="col-md-6 col-xl-6 col-lg-6 col-sm-6 col-12">
+                                            <p class="import-color">Enter Profile Name</p>
+                                                <div class="form-group">
+                                                    <input class="form-control" id="standardInput" type="text">
+                                                </div>
+                                         </div>
+                                         <div class="col-md-6 col-xl-6 col-lg-6 col-sm-6 col-12">
+                                            <p class="import-color">Upload Master Template</p>
+                                                <div class="form-group">
+                                                    <input class="form-control choose" id="standardInput" type="text">
+                                                    <span class="choose-file">Choose file</span>
+                                                </div>
+                                        </div>
+                                         <div class="col-md-6 col-xl-6 col-lg-6 col-sm-6 col-12">
+                                            <p class="import-color">Header Row Position</p>
+                                                <div class="form-group">
+                                                    <input class="form-control" id="standardInput" type="text">
+                                                </div>
+                                         </div>
+                                         <div class="col-md-6 col-xl-6 col-lg-6 col-sm-6 col-12">
+                                            <p class="import-color">Data Row Position</p>
+                                                <div class="form-group">
+                                                    <input class="form-control" id="standardInput" type="text">
+                                                </div>
+                                         </div>
+                                         </div> 
+                     
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <button class="btn btn-orange pl-5 pr-5 text-white orange-but but-right" type="button">Save</button>
+                                        </div>
+                                    </div>
+                                    
+                                        <div class="row">
+                                        <div class="col-sm-12 col-12">
+                                           <p class="text-black">There are 0 Profiles.</p>
+                                        </div>
+                                        </div>
+                                        
+                    <div class="row">
+                    <div class="table-responsive scroller scroller-horizontal col-lg-12">
+                        <table class="table table-color">
+                            <thead>
+                                <tr class="table">
+                                  <th class="text-black font-weight-normal" scope="col">Profile Name</th>
+                                  <th class="text-black font-weight-normal" scope="col">View Template</th>
+                                  <th class="text-black font-weight-normal" scope="col"></th>
+                                  <th class="text-black font-weight-normal" scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td class="p-5"></td>
+                                <td class="p-5"></td>
+                                <td class="p-5"></td>
+                                <td class="p-5"></td>
+                                </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    </div>
+                                
+                      </div>
+
+                      
+                                <div class="tab-pane fade" id="classifications-4" role="tabpanel">
+                                                        <div class="row">
+                        <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-12">
+                            <div class="text-black mb-3 ">
+                                Select Field from Import File
+                            </div>
+                                <div class="search-scroll">
+                          <div class="dual-listbox">
+                            <div class="searchicon">
+                              <input class="dual-listbox__search form-control" placeholder="Search">
+
+                              </div>
+                            <div class="dual-listbox__container mt-0">
+                              <div><ul class="dual-listbox__available">
+                                <li class="dual-listbox__item" data-id="1">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress</div>
+                                  <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="2">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress Envelope Delivery</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="3">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalvalue</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="4">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="5">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority H M Forces </div>
+                                     <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="6">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="7">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome (PO Boxes)</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="8">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europrioritybusiness</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="9">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">globalBulk Direct</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                               </ul>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                         </div>
+                         <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-12">
+                            <div class="text-black mb-3 map-class">
+                                Select 247 Cloudhub Field
+                            </div>
+                            <div class="search-scroll">
+                          <div class="dual-listbox">
+                            <div class="searchicon">
+                              <input class="dual-listbox__search form-control" placeholder="Search">
+
+                              </div>
+                            <div class="dual-listbox__container mt-0">
+                              <div><ul class="dual-listbox__available">
+                                <li class="dual-listbox__item" data-id="1">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress</div>
+                                  <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="2">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress Envelope Delivery</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="3">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalvalue</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="4">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="5">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority H M Forces </div>
+                                     <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="6">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="7">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome (PO Boxes)</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="8">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europrioritybusiness</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="9">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">globalBulk Direct</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        </div>
+                         <div class="col-md-4 col-lg-4 col-sm-12 col-12 col-xl-4">
+                            <div class="text-black mb-3 map-class">
+                                Mapped Columns
+                            </div>
+                            <div class="search-scroll">
+                          <div class="dual-listbox">
+                            <div class="searchicon">
+                              <input class="dual-listbox__search form-control" placeholder="Search">
+
+                              </div>
+                            <div class="dual-listbox__container mt-0">
+                              <div><ul class="dual-listbox__available">
+                                <li class="dual-listbox__item" data-id="1">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress</div>
+                                  <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="2">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalexpress Envelope Delivery</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="3">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalvalue</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="4">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="5">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/departures.svg" class="pr-2">globalpriority H M Forces </div>
+                                     <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="6">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="7">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europriorityhome (PO Boxes)</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="8">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">europrioritybusiness</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="9">
+                                  <div class="d-flex justify-content-between">
+                                    <div><img src="images/note.svg" class="pr-2">globalBulk Direct</div>
+                                   <div><img src="images/add-orange.svg" class="add-plus mt-1"></div>
+                                  </div> 
+                                </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                         </div>
+                     </div>
+                     
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12 my-2">
+                            <p class="text-black">No Records Found!!!</p>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12">
+                            <button class="btn btn-orange pl-5 pr-5 text-white orange-but but-right" type="button">Save</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="table-responsive scroller scroller-horizontal col-lg-12">
+                        <table class="table table-color">
+                            <thead>
+                                <tr class="table">
+                                  <th class="text-black font-weight-normal" scope="col">Template Fields</th>
+                                  <th class="text-black font-weight-normal" scope="col">247 Cloudhub Fields</th>
+                                  <th class="text-black font-weight-normal" scope="col">Mapping Column</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td><div class="search col-lg-8">
+                                      <input class="form-control search-background" type="text" placeholder="Search">
+                                </div></td>
+                                                <td><div class="search col-lg-8">
+                                      <input class="form-control search-background" type="text" placeholder="Search">
+                                </div></td>
+                                <td></td>
+                                </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                     </div>
+                    
+                                </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+                <div class="tab-pane fade" id="panelTab16-5" role="tabpanel">
+                    <div class="optimise-contnet">
+                    <div class="market-content mx-4">
+                         <div class="invent-data">
+                            <p>Import Inventory Data</p>
+                         </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-xl-6 col-lg-6 col-sm-6 col-12">
+                                                    <p class="import-color">Import Profile</p>
+                                                    <div class="form-group">
+
+                                                        <input class="form-control" id="standardInput" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-12">
+                                                    <p class="import-color">File Location</p>
+                                                    <div class="form-group">
+
+                                                        <input class="form-control choose" id="standardInput" type="text">
+                                                        <span class="choose-file">Choose file <i class="mdi-folder-upload"></i></span>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="row">
+                                                    <div class="col-sm-12 text-right">
+                                                        <button class="btn btn-dark p-2 text-white orange-but mr-4" type="button">Reset</button>
+                                                        <button class="btn btn-orange p-2 text-white orange-but " type="button">Import</button>
+                                                    </div>
+                                                </div>
+                                                
+                      </div>
+                      </div>
+                </div>
+                </div>
+    </section>
+    </div>

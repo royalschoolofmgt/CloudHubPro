@@ -1,0 +1,467 @@
+.orderdashboard {
+	color:#393C40;
+	font-size:14px;
+}
+.orderdashboard .second-sec ul li, 
+.orderdashboard .third-sec ul li{
+	list-style-type:none;
+}
+.orderdashboard .second-sec .order-stage{
+	height: 30px;
+    padding: 20px 4px;
+}
+.orderdashboard .first-sec .card-header {
+	border-bottom:0px;
+	background-color:#fff;
+}	
+.orderdashboard .second-sec .search-bar {
+	position:relative;
+}
+.orderdashboard .second-sec .search-bar .sidebar-search-new:before {
+	position: absolute;
+    right: 20px;
+    top: 12px;
+    content: '\ec22';
+    font-family: 'Linearicons';
+    font-size: 1.125rem;
+    color: #a7a9b2;
+    z-index: 2;
+}
+.tabs-vertical-top.tabs-border .nav-link.active.border-blue:before {
+    top: 91%;
+	background-color:#E85E22 ;
+}
+.orderdashboard .second-sec .display{
+	margin-left:15px;
+	color:#E85E22 ;
+}
+.orderdashboard .third-sec .btn-sec button:hover,
+.orderdashboard .third-sec .btn-sec span:hover{
+	background-color:#E85E22 ;
+	color:#fff;
+}
+.orderdashboard .third-sec .btn-sec{
+	border-radius:5px;
+	height:35px;
+}
+.orderdashboard .third-sec td.table-color{
+	background-color:#373331;
+	color:#fff;
+}
+.orderdashboard .second-sec .calendar-sec{
+	position: relative;
+}
+.orderdashboard .second-sec .calendar-sec i{
+	position: absolute;
+    z-index: 2;
+    top: 14px;
+    left: 10px;
+}
+.orderdashboard .second-sec .calendar-sec span{
+	position: absolute;
+    right: 5px;
+    top: 11px;
+}
+.orderdashboard .second-sec ul li.page-sec select{
+	padding: 3px 15px 3px 3px;
+    height: auto;
+	color: #3E3F42;
+}
+.orderdashboard .second-sec .small-text li .num-sec{
+	color:#E85E22;
+}
+.orderdashboard .second-sec .small-text li .ship-sec{
+	background-color:#E85E22;
+	color:#fff;
+}
+.orderdashboard .third-sec .panel-sec .panel{
+	box-shadow: none;
+}
+.orderdashboard .third-sec table td.text-col{
+	text-decoration:underline;
+	min-width: 165px;
+}
+.orderdashboard .third-sec table td.text-col:hover{
+	color:#E85E22;
+}
+.orderdashboard .third-sec table th.qty-sec{
+	min-width: 135px;
+}
+.orderdashboard .third-sec table{
+	color:#000;
+}
+.orderdashboard .third-sec .tab-content .bc-sec{
+	background-color:#F9F9F9;
+}
+.orderdashboard .third-sec table td.num-sec{
+	color:#E85E22;
+}
+.orderdashboard .third-sec img.img-num{
+	position: relative;
+}
+.orderdashboard .third-sec span.num-img{
+	position: absolute;
+    top: 78px;
+    left: 60px;
+}
+.orderdashboard .third-sec .row ul li span.royal-underline{
+	text-decoration:underline;
+}
+.orderdashboard .third-sec .row ul li span.royal-color{
+	color:#E85E22;
+}
+.orderdashboard .third-sec .row ul li.royal-sec{
+	width:33.33%;
+}
+.orderdashboard .third-sec ul li span.more-sec{
+	color: #8D8D8D;
+}
+
+.orderdashboard .third-sec .tab-content{
+	box-shadow: 0px 2px 6px #0000002B;
+	opacity: 1;
+}
+.orderdashboard .second-sec .black-hover:hover{
+	background-color:#393C40;
+	color:#fff;
+}
+.orderdashboard .second-sec .black-hover:hover .small-text span.num-sec{
+	color:#fff;
+}
+.orderdashboard .second-sec .black-hover:hover .border-hover-sec{
+	border-top: 1px solid rgba(255, 255, 255, 1);
+}
+.orderdashboard .second-sec .black-hover{
+	background-color:#F9F9F9;
+}
+.orderdashboard .first-sec .panel{
+	box-shadow:none;
+}
+.orderdashboard .first-sec .panel-body .show-sec{
+	background-color:#F9F9F9;
+}
+/*.orderdashboard .second-sec .overflow-sec{
+	overflow-y: auto;
+    height: 450px;
+}*/
+.orderdashboard .second-sec .search-bar .sidebar-search-new input{	
+	background:#F9F9F9;	
+}	
+.orderdashboard .first-background-sec {	
+	background:#F9F9F9;	
+}
+.orderdashboard .third-sec ul li a.color-tab{	
+	background:#fff;	
+	color:#393C40	
+}
+.orderdashboard .third-sec .third-background-sec{	
+	background:#F9F9F9;	
+}
+.orderdashboard .third-sec .subtotal-table .sub-tab{
+	border-bottom:none;
+}
+.orderdashboard .third-sec .subtotal-table .tax-tab{
+	border-top:none;
+}
+.orderdashboard .third-sec .table .table-color{
+	background-color:#373331;
+	color:#fff;
+}
+<!---media starts--!>
+
+
+@media (max-width: 991px){
+	.orderdashboard .first-sec,
+	.orderdashboard .second-sec,
+	.orderdashboard .third-sec{
+		margin-top:20px;
+	}
+	.orderdashboard .second-sec .overflow-sec{
+		overflow-y: auto;
+		height: 500px;
+}
+}
+@media (max-width: 500px){
+	.orderdashboard .third-sec .row ul li.royal-sec{
+	width:100%;
+}
+}
+@media (max-width: 450px){
+	.orderdashboard .third-sec span.num-img{
+    top: 65px;
+    left: 35px;
+}
+}
+@media (max-width: 357px){
+	.orderdashboard{
+		margin-top:75px;
+	}
+}
+@media (max-width: 550px){
+	.orderdashboard .third-sec .billing-sec{
+		display:block;
+	}
+	.orderdashboard .third-sec .row ul li.royal-sec{
+	width:100%;
+	padding:5px;
+}
+}
+@media (min-width: 551px){
+	.orderdashboard .third-sec .billing-sec{
+		display:flex;
+	}
+}
+@media (max-width: 380px){
+	.orderdashboard .second-sec .small-text{
+		flex-wrap:wrap;
+	}
+}
+@media (max-width: 547px){
+	.orderdashboard .third-sec .third-but-sec{
+		display:block;
+		padding-right:20px;
+	}
+	.orderdashboard .third-sec .third-but-sec .top-btn{
+		margin:10px;
+	}
+}
+@media (min-width: 548px){
+	.orderdashboard .third-sec .third-but-sec{
+		display:flex;
+	}
+}
+@media (max-width: 819px){
+	.orderdashboard .second-sec .small-text li{	
+	font-size:12px;	
+}
+.orderdashboard .second-sec ul li.page-sec select{	
+    font-size: 12px;	
+}
+}
+@media (min-width: 992px) and (max-width: 1360px){
+	.orderdashboard p.filter-content{	
+	font-size:14px;	
+}
+.orderdashboard .first-sec .card-body label{	
+	font-size:12px;	
+}
+.orderdashboard .third-sec .top-btn button{	
+	font-size:12px;	
+}
+.orderdashboard .third-sec .panel-sec h6{	
+	font-size:14px;	
+}	
+.orderdashboard .second-sec ul li.page-sec select{	
+    font-size: 12px;	
+}
+.orderdashboard .third-sec p.content-sec{	
+	font-size:14px;	
+}	
+.orderdashboard .third-sec .panel-sec .panel-icon{	
+	font-size: 15px;	
+}
+.orderdashboard .third-sec .tab-content .bc-sec p.uk-sec{	
+	font-size:14px;	
+}
+.orderdashboard .third-sec .row ul li.royal-sec{	
+	font-size:14px;	
+}
+.orderdashboard .first-sec .first-panel-header{	
+	font-size:14px;	
+}
+.orderdashboard .third-sec .terms-sec{	
+	font-size:15px;	
+}
+}
+@media (max-width: 991px) and (min-width: 614px){
+	.orderdashboard .third-sec .third-but-sec{
+	display: flex;
+    justify-content: space-between;
+	padding-right:10px;
+	}
+}
+@media (max-width: 991px) and (min-width: 320px){
+	.orderdashboard .third-sec .third-but-sec .btn-sec{
+	height:40px;
+}
+}
+@media (max-width: 735px){
+.orderdashboard .third-sec .top-btn button{	
+	font-size:14px;	
+}
+}
+@media (max-width: 704px) and (min-width:569px){
+.orderdashboard .third-sec .top-btn button{	
+	font-size:13px;	
+}
+}
+@media (max-width: 1243px) and (min-width:992px){
+.orderdashboard .second-sec .select-top-sec{	
+	padding-left:0px;
+	padding-right:0px;
+}
+}
+@media (max-width: 624px){
+	.orderdashboard .third-sec p.invoice-sec{	
+	font-size:12px;	
+}
+}
+@media (max-width: 379px){
+	.orderdashboard .second-sec .overflow-sec ul li .select-sec{
+	 margin-right:0px;
+	}
+	.orderdashboard .third-sec .panel-sec h6{	
+	font-size:14px;	
+}	
+.orderdashboard .third-sec .panel-sec .panel-body{	
+	font-size:12px;	
+}
+.orderdashboard .third-sec .panel-sec .panel-icon{	
+	font-size: 15px;	
+}
+}
+@media (max-width: 450px){
+	.orderdashboard .third-sec .third-background-sec .ship-sec{
+		padding-right:0px;
+		padding-left:0px;
+	}
+	.orderdashboard .third-sec .due-sec{
+		margin-top:120px;
+}
+}
+@media (max-width: 400px){
+	.orderdashboard .third-sec .subtotal-sec{
+		margin-left:-80px;
+	}
+}
+@media (max-width: 375px){
+.orderdashboard .second-sec .calendar-sec i{
+    left: 7px;
+}
+}
+@media (max-width: 350px){
+.orderdashboard .second-sec .calendar-sec i{
+    left: 3px;
+}
+}
+@media (max-width: 575px){
+	.orderdashboard .third-sec .third-background-sec .ship-sec{
+		padding-bottom:15px;
+	}
+}
+@media (min-width: 992px){
+	.orderdashboard .common-sec ul li{	
+	list-style-type:none;	
+}
+.orderdashboard .common-sec .btn-sec button:hover,	
+.orderdashboard .common-sec .btn-sec span:hover{	
+	background-color:#E85E22 ;	
+	color:#fff;	
+}	
+.orderdashboard .common-sec .btn-sec{	
+	border-radius:7px;	
+	height:60px;
+}
+.orderdashboard .common-sec ul li .orange-but{	
+	height:50px;	
+	width:80px;	
+}
+.orderdashboard .first-sec .filter-content,	
+	.orderdashboard .second-sec ul.filter-content,	
+	.orderdashboard .third-sec ul.filter-content{	
+		display:none !important;	
+	}	
+	.orderdashboard .common-sec .calendar-sec{	
+	position: relative;	
+}	
+.orderdashboard .common-sec .calendar-sec i{	
+	position: absolute;	
+    z-index: 2;	
+    top: 19px;	
+    left: 10px;	
+}	
+.orderdashboard .common-sec .calendar-sec span{	
+	position: absolute;	
+    right: 10px;	
+    top: 15px;	
+}
+.orderdashboard .second-border-sec{
+	border-left: 1px solid #dde3e8;
+    border-right: 1px solid #dde3e8;
+}
+.orderdashboard .third-gap-sec{
+	padding-left:0px
+}
+.orderdashboard .third-gap-sec .tabs-vertical-top.tabs-border .nav-tabs {
+	padding-top:0px;
+}
+.orderdashboard .common-sec .more-sec{
+		padding:18px 4px 0px 4px;
+	}
+.orderdashboard .second-sec .overflow-sec{
+		overflow-y: auto;
+		height: 800px;
+}
+}
+@media (min-width:1580px){
+.orderdashboard .common-sec .print-but-sec{
+	padding-left:0px;
+}
+}
+@media (min-width:1523px){
+	.orderdashboard .common-sec .btn-sec{	
+	height:40px;
+}
+.orderdashboard .common-sec .more-sec{
+		padding:11px 4px 0px 4px;
+	}
+}
+@media (max-width:991px){
+	.orderdashboard .common-sec{
+		display:none;
+	}
+	.orderdashboard .third-gap-sec{
+	margin-top:30px;
+}
+.orderdashboard .third-sec .third-but-sec{
+	margin-bottom:20px;
+}
+}
+@media (min-width:600px){
+	.orderdashboard .third-sec .third-background-sec .bc-sec{
+		padding:40px;
+	}
+}
+@media (max-width:599px){
+	.orderdashboard .third-sec .third-background-sec .bc-sec{
+		padding: 15px 0px;
+	}
+}
+@media (max-width:365px){
+	.orderdashboard .third-sec .tab-content .bc-sec p.uk-sec{	
+	font-size:11px;	
+}
+}
+@media (max-width:547px){
+	.orderdashboard .third-sec ul li span.more-sec{
+		padding:9px 3px 0px 8px;
+	}
+}
+@media (min-width:410px){
+	.orderdashboard .third-sec .panel-sec{
+		padding:0px 20px;
+	}
+}
+@media (max-width: 664px) and (min-width: 548px){
+	.orderdashboard .third-sec .third-but-sec .btn-sec{	
+		height:57px;
+	}
+	.orderdashboard .third-sec ul li span.more-sec{
+		padding:18px 3px 0px 5px;
+	}
+}
+@media (max-width: 991px) and (min-width: 665px){
+	.orderdashboard .third-sec ul li span.more-sec{
+		padding:9px 5px 0px 5px;
+	}
+}

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html class="rd-navbar-sidebar-active" lang="en">
+
+<head>
+    <title>Add Condition</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Template Monster Admin Template">
+    <meta property="og:description"
+        content="brevis, barbatus clabulares aliquando convertam de dexter, peritus capio. devatio clemens habitio est.">
+    <meta property="og:image" content="http://digipunk.netii.net/images/radar.gif">
+    <meta property="og:url" content="http://digipunk.netii.net">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="components/base/base.css">
+    <link rel="stylesheet" type="text/css" href="html/css/style.css">
+    <link rel="stylesheet" href="custom/sidebar.css">
+    <link rel="stylesheet" href="custom/custom.css">
+    <link rel="stylesheet" href="custom/inventory-import-10.css">
+    <link rel="stylesheet" href="custom/add-new-screen.css">
+    <script src="components/base/script.js"></script>
+</head>
+
+<body>
+    <div class="page bg-white">
+      <header class="section page-header">
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar">
+            <div class="rd-navbar-panel">
+              <div class="rd-navbar-panel-cell">
+                <button class="btn btn-sm btn-navbar-panel rd-navbar-sidebar-toggle" data-navigation-switch="data-navigation-switch"><span class="linearicons-menu"></span></button>
+              </div>
+              <div class="rd-navbar-panel-cell brd-none">
+                <ul class="nav custom-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="rd-navbar-panel-center"></div>
+              <div class="rd-navbar-panel-cell brd-none">
+                <!-- Search -->
+                <div class="rd-navbar-panel-cell rd-navbar-panel-cell-search">
+                  <div class="rd-navbar-sidebar-search">
+                    <input class="form-control" type="text" placeholder="Search"/>
+                  </div>
+                </div>
+                <div class="rd-navbar-subpanel" id="subpanel-chat">
+                  <div class="panel">
+                    <div class="panel-header p-2">
+                      <h6 class="panel-title"><span class="panel-icon fa-pencil"></span> <span>Chat widget</span>
+                      </h6>
+                    </div>
+                    <div class="panel-body scroller scroller-vertical p-2">
+                      <div class="media media-cloud group-10">
+                        <div class="media-item"><img src="images/users/user-02-50x50.jpg" width="50" height="50" alt=""/></div>
+                        <div class="media-body">
+                          <h6 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                          </h6>
+                          <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                        </div>
+                      </div>
+                      <div class="media media-cloud flex-row-reverse group-10">
+                        <div class="media-item"><img src="images/users/user-03-50x50.jpg" width="50" height="50" alt=""/></div>
+                        <div class="media-body media-body-right-caret">
+                          <h6 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                          </h6>
+                          <div class="media-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                        </div>
+                      </div>
+                      <div class="media media-cloud group-10">
+                        <div class="media-item"><img src="images/users/user-02-50x50.jpg" width="50" height="50" alt=""/></div>
+                        <div class="media-body">
+                          <h6 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                          </h6>
+                          <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                        </div>
+                      </div>
+                      <div class="media media-cloud flex-row-reverse group-10">
+                        <div class="media-item"><img src="images/users/user-03-50x50.jpg" width="50" height="50" alt=""/></div>
+                        <div class="media-body media-body-right-caret">
+                          <h6 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                          </h6>
+                          <div class="media-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer p-2">
+                      <div class="input-group form-group">
+                        <input class="form-control" type="text" placeholder="Enter your message"/>
+                        <div class="input-group-append"> 
+                          <button class="btn btn-primary">Send</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rd-navbar-panel-cell brd-none">
+                <button class="btn btn-sm btn-navbar-panel" data-multi-switch='{"targets":"#subpanel-notifications","scope":"#subpanel-notifications","isolate":"[data-multi-switch]"}'><span class="linearicons-alarm"></span><span class="badge badge-primary">2</span></button>
+                <div class="rd-navbar-subpanel" id="subpanel-notifications">
+                  <div class="panel">
+                    <div class="panel-header">
+                      <h6 class="panel-title"><span class="panel-icon fa-bell"></span><span>Notifications</span></h6>
+                    </div>
+                    <div class="panel-body p-2 scroller scroller-vertical">
+                      <div class="group-5">
+                        <div class="alert alert-dismissible alert-primary alert-sm" role="alert"><span class="alert-icon fa-telegram"></span><span>Message</span>
+                          <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="alert alert-dismissible alert-warning alert-sm" role="alert"><span class="alert-icon fa-warning"></span><span>Warning</span>
+                          <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="alert alert-dismissible alert-danger alert-sm" role="alert"><span class="alert-icon fa-remove"></span><span>Error</span>
+                          <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="alert alert-dismissible alert-success alert-sm" role="alert"><span class="alert-icon fa-thumbs-up"></span><span>Success</span>
+                          <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer p-2"><a class="btn btn-primary btn-sm" href="alerts.html">See more</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="rd-navbar-panel-cell">
+                <button class="btn btn-sm btn-navbar-panel" data-multi-switch='{"targets":".sidebar","scope":".sidebar","isolate":"[data-multi-switch]"}'><span class="linearicons-ellipsis"></span></button>
+              </div>
+            </div>
+            <div class="rd-navbar-sidebar scroller scroller-vertical">
+              <div class="rd-navbar-sidebar-panel">
+                <div>
+                  <div class="group-15">
+                    <div class="rd-navbar-brand"><a href="index.html"><img src="images/logo.png" alt=""/></a></div>
+                    <div class="rd-navbar-sidebar-search">
+                      <input class="form-control" type="text" placeholder="Search"/>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-sm btn-navbar-panel rd-navbar-sidebar-toggle" data-navigation-switch="data-navigation-switch"><span class="linearicons-menu"></span></button>
+              </div>
+              <ul class="rd-navbar-nav">
+                <li class="rd-navbar-nav-item">
+                  <div class="rd-navbar-title"><span class="rd-navbar-title-icon"><span class="fa-ellipsis-h"></span></span><span class="rd-navbar-title-text">Menu</span></div>
+                </li>
+                <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="index.html"><span class="rd-navbar-icon linearicons-icons2"></span><span class="rd-navbar-link-text">Dashboard</span></a>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <a class="rd-navbar-link" href="#.html"><span class="rd-navbar-icon linearicons-store"></span><span class="rd-navbar-link-text">Inventory management</span></a> 
+                  <ul class="rd-navbar-dropdown">
+                    <h3 style="font-size: 24px; color: #fff; font-weight: 600; margin-bottom: 60px;">Inventory Management</h3>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5>Inventory</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory_hub.html"></span>Dash board</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory-import.html"></span>Import</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory-import-10.html"></span>Status</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="picking-list-setting2.html"></span>Listing Monitor</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="listing-monitor-1.html"></span>Product Export Import Status</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory-delete-log.html"></span>Delete Logs</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory-block-unblock-flag.html"></span>Block Unblock Logs</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="product-catalogue.html"></span>Product Catalogue</a></li>
+                      </div>
+                      <div class="col-sm-6">
+                        <h5>eBay Inventory </h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="ebay_listing_template.html"></span>eBay listed items</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="ebay-dashboard.html"></span>Dash board</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Assign Category SKUS</a></li>
+                        <br>
+                        <h5>Website </h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Assign category SKUS</a></li>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-top: 60px">
+                      <div class="col-sm-6">
+                        <h5>Amazon Repricing</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Catalogue</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Repricing Status </a></li>
+                      </div>
+                      <div class="col-sm-6">
+                        <h5>Warehouse </h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Supplier Management</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Stock Movement Log</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Stock Take Inventory </a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Stock Locations </a></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-cube"></span><span class="rd-navbar-link-text">Order management</span></a>
+                  <ul class="rd-navbar-dropdown">
+                    <h3 style="font-size: 24px; color: #fff; font-weight: 600; margin-bottom: 60px;">Order Management</h3>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5>Order Dashboard</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="order-dashboard.html"></span>Scan Pack Ship</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="scan-pack-ship-export.html"></span>Scan Pack Ship Export</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="order-export-status-monitor.html"></span>Order Export Status Monitor</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="scanpackship-log.html"></span>Scanpackship Log</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Print Log</a></li>
+                      </div>
+                      <div class="col-sm-6">
+                        <h5>Customer Services</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="manual-telephone-order.html"></span>Manual Telephone Order</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="fba-orders.html"></span>FBA Orders</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Order History and Status</a></li>
+                        <br>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Deliver Pending Orders</a></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-document"></span><span class="rd-navbar-link-text">Reports</span></a>
+                  <ul class="rd-navbar-dropdown">
+                    <h3 style="font-size: 24px; color: #fff; font-weight: 600; margin-bottom: 60px;">Reports</h3>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5>Reports</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="sales-report.html"></span>Sales Reports</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="shipping-cost-reports.html"></span>Shipping Cost Reports</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="vat-report.html"></span>Vat Reports</a></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-cog"></span><span class="rd-navbar-link-text">Settings</span></a>
+                  <ul class="rd-navbar-dropdown">
+                    <h3 style="font-size: 24px; color: #fff; font-weight: 600; margin-bottom: 60px;">Settings</h3>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5>Order Management Settings</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="picking-list-setting2.html"></span>Picking List Design</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="shipping-carrier.html"></span>Shipping Carrier Configuration</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Shipping Edit Carrier Configuration</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Shipping Edit Dpd Carrier Configuration</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Product Export Import Status</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Shipping Edit Interlink Carrier Configuration</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="#.html"></span>Shipping Edit Parcelforce Carrier Configuration</a></li>
+                      </div>
+                      <div class="col-sm-6">
+                        <h5>Organisation</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="user-setting-1.html"></span>User Settings</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="organisation-setting.html"></span>Organisation Settings</a></li>
+                        <br>
+                        <h5>Marketplace Settings</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="marketplace-accounts.html"></span>Add and Edit new Marketplaces</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="optimise-profiles.html"></span>Optimise Profiles</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="ebay-order-download-setting.html"></span>Ebay Order Download Settings</a></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-link2"></span><span class="rd-navbar-link-text">Quick Links</span></a>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <div class="rd-navbar-title"><span class="rd-navbar-title-icon"><span class="fa-ellipsis-h"></span></span><span class="rd-navbar-title-text">SUPPORT</span></div>
+                </li>
+                <li class="rd-navbar-nav-item "><a class="rd-navbar-link" href="index.html"><span class="rd-navbar-icon linearicons-question"></span><span class="rd-navbar-link-text">Need Help?</span></a>
+                </li>
+                <li class="rd-navbar-nav-item "><a class="rd-navbar-link" href="index.html"><span class="rd-navbar-icon linearicons-telephone2"></span><span class="rd-navbar-link-text">Contact Us </span></a>
+                </li>
+                <li class="rd-navbar-nav-item "><a class="rd-navbar-link" href="index.html"><span class="rd-navbar-icon linearicons-dice"></span><span class="rd-navbar-link-text">Knowledge Base</span></a>
+                </li>
+                <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="#"><span class="rd-navbar-icon fa-columns"></span><span class="rd-navbar-link-text"> Contact Us</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+        <section class="section-sm pt-0 inventory-import-10">
+
+            <section class="topbar border-bottom  pt-2 pb-2 px-3">
+               <div class="row">
+                <div class="col-md-9">
+                <!-- Breadcrumbs-->
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item"> <a class="breadcrumbs-link" href="index.html">Home</a></li>
+                    <li class="breadcrumbs-item"> <a class="breadcrumbs-link" href="index.html">Shipping Rules</a>
+                    </li>
+                    <li class="breadcrumbs-item">Add Condition</li>
+                </ul>
+                </div>
+               </div>
+            </section>
+                <div class="col-sm-12 py-4 text-area">
+                    <textarea class="form-control" id="standardTextarea" rows="20">{Address line 1} contains "Steve" AND {Country} Equals "Spain"
+                      
+                      
+                    
+                    See BRD for full list of values for below
+                      </textarea>
+                </div>
+                      <div class="col-lg-12">
+                         <div class="row">
+                            <div class="col-md-3 col-lg-3 col-sm-12 col-12 ">
+                                <div class="text-black my-3">Select System Field
+                                </div>
+                                <div class="search-scroll">
+                          <div class="dual-listbox">
+                            <div class="searchicon">
+                              <input class="dual-listbox__search form-control" placeholder="">
+                              </div>
+                            <div class="dual-listbox__container mt-0">
+                              <div><ul class="dual-listbox__available">
+                                <li class="dual-listbox__item" data-id="1">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Address 1</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="2">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Address 2</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="3">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Post Code</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="4">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Country</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="5">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Other Fields</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="6">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Custom Field</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="7">
+                                  <div class="d-flex justify-content-between">
+                                    <div></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="8">
+                                  <div class="d-flex justify-content-between">
+                                    <div></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="9">
+                                  <div class="d-flex justify-content-between">
+                                    <div></div>
+                                  </div> 
+                                </li>
+                               </ul>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                         </div>
+                         <div class="col-md-3 col-lg-3 col-sm-12 col-12 mt-sm-4 mt-md-0 add-class">
+                            <div class="text-black my-3">
+                                Select Custom Field
+                            </div>
+                                <div class="search-scroll">
+                          <div class="dual-listbox">
+                            <div class="searchicon">
+                              <input class="dual-listbox__search form-control" placeholder="">
+                              </div>
+                            <div class="dual-listbox__container mt-0">
+                              <div><ul class="dual-listbox__available">
+                                <li class="dual-listbox__item" data-id="1">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Custom Field1</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="2">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Custom Field2</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="3">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Custom Field3</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="4">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Custom Field4</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="6">
+                                  <div class="d-flex justify-content-between">
+                                    <div></div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="7">
+                                  <div class="d-flex justify-content-between">
+                                    <div></div>
+                                  </div> 
+                                </li>
+                               </ul>
+                               <div class="pull-right">
+                                <button class="btn btn-primary btn-orange py-2 mt-3" type="button">Close</button>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                         </div>
+                         <div class="col-md-3 col-lg-3 col-sm-12 col-12 mt-sm-4 mt-md-0 add-class">
+                            <div class="text-black my-3">
+                                Function
+                            </div>
+                                <div class="search-scroll">
+                          <div class="dual-listbox">
+                            <div class="searchicon">
+                              <input class="dual-listbox__search form-control" placeholder="Search">
+
+                              </div>
+                            <div class="dual-listbox__container mt-0">
+                              <div><ul class="dual-listbox__available">
+                                <li class="dual-listbox__item" data-id="1">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Equals</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="2">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Does not Equal</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="3">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Start with</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="4">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Does not start with</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="5">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Ends with</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="6">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Does not end with</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="7">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Contains</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="8">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Does not contain</div>
+                                  </div> 
+                                </li>
+                                <li class="dual-listbox__item" data-id="9">
+                                  <div class="d-flex justify-content-between">
+                                    <div>Ends with one of</div>
+                                  </div> 
+                                </li>
+                               </ul>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        </div>
+                         </div>
+                        <div class="col-md-3 col-lg-3 col-sm-12 col-12 mt-sm-4 mt-md-0 add-class">
+                            <div class="text-black my-3">
+                                Criteria
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" id="standardInput" type="text">
+                            </div>
+                            <div class="text-center">
+                                <p class="text-or">OR</p>
+                            </div>
+                            <div class="py-3 text-area">
+                                <textarea class="form-control" id="standardTextarea" rows="20">Feild type is determined by the field and / or function choosen. See BRD</textarea>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-or">OR</p>
+                            </div>
+                            <div class="form-group">
+                                <select class="select2" name="country" data-placeholder="">
+                                  <option label="placeholder"></option>
+                                  <option>Select</option>
+                                </select>
+                            </div>
+                            <div class="pull-right">
+                                <button class="btn btn-primary btn-orange py-2 mt-3" type="button">Add Criteria</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="row pull-right my-5">
+                    <div class="col-md-12">
+                        <button class="btn btn-primary btn-orange py-2 mt-3" type="button">Cancel</button>
+                        <button class="btn btn-primary btn-orange py-2 mt-3" type="button">Add Condition</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+        <div class="sidebar scroller scroller-vertical">
+            <div class="panel">
+                <div class="panel-header">
+                    <h6 class="panel-title"><span class="panel-icon fa-trophy"></span><span>Right Sidebar Content</span>
+                    </h6>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat ac tortor eu viverra.
+                        Etiam ipsum neque, fermentum quis sagittis nec, hendrerit id diam. Mauris a tincidunt odio. Sed
+                        porttitor ex pulvinar, tristique sapien sed, malesuada nunc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

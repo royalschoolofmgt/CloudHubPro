@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html class="rd-navbar-sidebar-active page-small-footer" lang="en">
+  <head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Template Monster Admin Template">
+    <meta property="og:description" content="brevis, barbatus clabulares aliquando convertam de dexter, peritus capio. devatio clemens habitio est.">
+    <meta property="og:image" content="http://digipunk.netii.net/images/radar.gif">
+    <meta property="og:url" content="http://digipunk.netii.net">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="components/base/base.css">
+    <link rel="stylesheet" href="custom/sidebar.css"> 
+    <link rel="stylesheet" href="custom/custom.css"> 
+    <script src="components/base/script.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="section page-header">
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar">
+            <div class="rd-navbar-panel">
+              <div class="rd-navbar-panel-cell">
+                <button class="btn btn-sm btn-navbar-panel rd-navbar-sidebar-toggle" data-navigation-switch="data-navigation-switch"><span class="linearicons-menu"></span></button>
+              </div>
+              <div class="rd-navbar-panel-cell brd-none">
+                <ul class="nav custom-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Rakuten</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Website</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">eBay</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="rd-navbar-panel-center"></div>
+              <div class="rd-navbar-panel-cell brd-none">
+                <!-- Search -->
+                <div class="rd-navbar-panel-cell rd-navbar-panel-cell-search">
+                  <div class="rd-navbar-sidebar-search">
+                    <input class="form-control" type="text" placeholder="Search"/>
+                  </div>
+                </div>
+                <div class="rd-navbar-subpanel" id="subpanel-chat">
+                  <div class="panel">
+                    <div class="panel-header p-2">
+                      <h6 class="panel-title"><span class="panel-icon fa-pencil"></span> <span>Chat widget</span>
+                      </h6>
+                    </div>
+                    <div class="panel-body scroller scroller-vertical p-2">
+                      <div class="media media-cloud group-10">
+                        <div class="media-item"><img src="images/users/user-02-50x50.jpg" width="50" height="50" alt=""/></div>
+                        <div class="media-body">
+                          <h6 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                          </h6>
+                          <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                        </div>
+                      </div>
+                      <div class="media media-cloud flex-row-reverse group-10">
+                        <div class="media-item"><img src="images/users/user-03-50x50.jpg" width="50" height="50" alt=""/></div>
+                        <div class="media-body media-body-right-caret">
+                          <h6 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                          </h6>
+                          <div class="media-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                        </div>
+                      </div>
+                      <div class="media media-cloud group-10">
+                        <div class="media-item"><img src="images/users/user-02-50x50.jpg" width="50" height="50" alt=""/></div>
+                        <div class="media-body">
+                          <h6 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                          </h6>
+                          <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                        </div>
+                      </div>
+                      <div class="media media-cloud flex-row-reverse group-10">
+                        <div class="media-item"><img src="images/users/user-03-50x50.jpg" width="50" height="50" alt=""/></div>
+                        <div class="media-body media-body-right-caret">
+                          <h6 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                          </h6>
+                          <div class="media-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer p-2">
+                      <div class="input-group form-group">
+                        <input class="form-control" type="text" placeholder="Enter your message"/>
+                        <div class="input-group-append"> 
+                          <button class="btn btn-primary">Send</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rd-navbar-panel-cell brd-none">
+                <button class="btn btn-sm btn-navbar-panel" data-multi-switch='{"targets":"#subpanel-notifications","scope":"#subpanel-notifications","isolate":"[data-multi-switch]"}'><span class="linearicons-alarm"></span><span class="badge badge-primary">2</span></button>
+                <div class="rd-navbar-subpanel" id="subpanel-notifications">
+                  <div class="panel">
+                    <div class="panel-header">
+                      <h6 class="panel-title"><span class="panel-icon fa-bell"></span><span>Notifications</span></h6>
+                    </div>
+                    <div class="panel-body p-2 scroller scroller-vertical">
+                      <div class="group-5">
+                        <div class="alert alert-dismissible alert-primary alert-sm" role="alert"><span class="alert-icon fa-telegram"></span><span>Message</span>
+                          <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="alert alert-dismissible alert-warning alert-sm" role="alert"><span class="alert-icon fa-warning"></span><span>Warning</span>
+                          <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="alert alert-dismissible alert-danger alert-sm" role="alert"><span class="alert-icon fa-remove"></span><span>Error</span>
+                          <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="alert alert-dismissible alert-success alert-sm" role="alert"><span class="alert-icon fa-thumbs-up"></span><span>Success</span>
+                          <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer p-2"><a class="btn btn-primary btn-sm" href="alerts.html">See more</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="rd-navbar-panel-cell">
+                <button class="btn btn-sm btn-navbar-panel" data-multi-switch='{"targets":".sidebar","scope":".sidebar","isolate":"[data-multi-switch]"}'><span class="linearicons-ellipsis"></span></button>
+              </div>
+            </div>
+            <div class="rd-navbar-sidebar scroller scroller-vertical">
+              <div class="rd-navbar-sidebar-panel">
+                <div>
+                  <div class="group-15">
+                    <div class="rd-navbar-brand"><a href="index.html"><img src="images/logo.png" alt=""/></a></div>
+                    <div class="rd-navbar-sidebar-search">
+                      <input class="form-control" type="text" placeholder="Search"/>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-sm btn-navbar-panel rd-navbar-sidebar-toggle" data-navigation-switch="data-navigation-switch"><span class="linearicons-menu"></span></button>
+              </div>
+              <ul class="rd-navbar-nav">
+                <li class="rd-navbar-nav-item">
+                  <div class="rd-navbar-title"><span class="rd-navbar-title-icon"><span class="fa-ellipsis-h"></span></span><span class="rd-navbar-title-text">Menu</span></div>
+                </li>
+                <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="index.html"><span class="rd-navbar-icon linearicons-icons2"></span><span class="rd-navbar-link-text">Dashboard</span></a>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <a class="rd-navbar-link" href="#.html"><span class="rd-navbar-icon linearicons-store"></span><span class="rd-navbar-link-text">Inventory management</span></a> 
+                  <ul class="rd-navbar-dropdown">
+                    <h3 style="font-size: 24px; color: #fff; font-weight: 600; margin-bottom: 60px;">Inventory Management</h3>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5>Inventory</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory_hub.html"></span>Dash board</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory-import.html"></span>Import</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory-import-10.html"></span>Status</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="picking-list-setting2.html"></span>Listing Monitor</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="listing-monitor-1.html"></span>Product Export Import Status</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory-delete-log.html"></span>Delete Logs</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="inventory-block-unblock-flag.html"></span>Block Unblock Logs</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="product-catalogue.html"></span>Product Catalogue</a></li>
+                      </div>
+                      <div class="col-sm-6">
+                        <h5>eBay Inventory </h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="ebay_listing_template.html"></span>eBay listed items</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="ebay-dashboard.html"></span>Dash board</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Assign Category SKUS</a></li>
+                        <br>
+                        <h5>Website </h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Assign category SKUS</a></li>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-top: 60px">
+                      <div class="col-sm-6">
+                        <h5>Amazon Repricing</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="product-catalogue.html"></span>Catalogue</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="amazon-pricing-inventory.html"></span>Repricing Status </a></li>
+                      </div>
+                      <div class="col-sm-6">
+                        <h5>Warehouse </h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="supplier-management.html"></span>Supplier Management</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="stock-movement-log.html"></span>Stock Movement Log</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="stock-take-inventory.html"></span>Stock Take Inventory </a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="warehouse-stock-locations-tabs.html"></span>Stock Locations </a></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-cube"></span><span class="rd-navbar-link-text">Order management</span></a>
+                  <ul class="rd-navbar-dropdown">
+                    <h3 style="font-size: 24px; color: #fff; font-weight: 600; margin-bottom: 60px;">Order Management</h3>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5>Order Dashboard</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="order-dashboard.html"></span>Scan Pack Ship</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="scan-pack-ship-export.html"></span>Scan Pack Ship Export</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="order-export-status-monitor.html"></span>Order Export Status Monitor</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="scanpackship-log.html"></span>Scanpackship Log</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Print Log</a></li>
+                      </div>
+                      <div class="col-sm-6">
+                        <h5>Customer Services</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="manual-telephone-order.html"></span>Manual Telephone Order</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="fba-orders.html"></span>FBA Orders</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Order History and Status</a></li>
+                        <br>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Deliver Pending Orders</a></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-document"></span><span class="rd-navbar-link-text">Reports</span></a>
+                  <ul class="rd-navbar-dropdown">
+                    <h3 style="font-size: 24px; color: #fff; font-weight: 600; margin-bottom: 60px;">Reports</h3>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5>Reports</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="sales-report.html"></span>Sales Reports</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="shipping-cost-reports.html"></span>Shipping Cost Reports</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="vat-report.html"></span>Vat Reports</a></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-cog"></span><span class="rd-navbar-link-text">Settings</span></a>
+                  <ul class="rd-navbar-dropdown">
+                    <h3 style="font-size: 24px; color: #fff; font-weight: 600; margin-bottom: 60px;">Settings</h3>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5>Order Management Settings</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="picking-list-setting2.html"></span>Picking List Design</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="shipping-carrier.html"></span>Shipping Carrier Configuration</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Shipping Edit Carrier Configuration</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Shipping Edit Dpd Carrier Configuration</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Product Export Import Status</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Shipping Edit Interlink Carrier Configuration</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link strickout" href="#.html"></span>Shipping Edit Parcelforce Carrier Configuration</a></li>
+                      </div>
+                      <div class="col-sm-6">
+                        <h5>Organisation</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="user-setting-1.html"></span>User Settings</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="organisation-setting.html"></span>Organisation Settings</a></li>
+                        <br>
+                        <h5>Marketplace Settings</h5>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="marketplace-accounts.html"></span>Add and Edit new Marketplaces</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="optimise-profiles.html"></span>Optimise Profiles</a></li>
+                        <li class="rd-navbar-dropdown-item"><a class="rd-navbar-link" href="ebay-order-download-setting.html"></span>Ebay Order Download Settings</a></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="#"><span class="rd-navbar-icon linearicons-link2"></span><span class="rd-navbar-link-text">Quick Links</span></a>
+                </li>
+                <li class="rd-navbar-nav-item">
+                  <div class="rd-navbar-title"><span class="rd-navbar-title-icon"><span class="fa-ellipsis-h"></span></span><span class="rd-navbar-title-text">SUPPORT</span></div>
+                </li>
+                <li class="rd-navbar-nav-item "><a class="rd-navbar-link" href="index.html"><span class="rd-navbar-icon linearicons-question"></span><span class="rd-navbar-link-text">Need Help?</span></a>
+                </li>
+                <li class="rd-navbar-nav-item "><a class="rd-navbar-link" href="index.html"><span class="rd-navbar-icon linearicons-telephone2"></span><span class="rd-navbar-link-text">Contact Us </span></a>
+                </li>
+                <li class="rd-navbar-nav-item "><a class="rd-navbar-link" href="index.html"><span class="rd-navbar-icon linearicons-dice"></span><span class="rd-navbar-link-text">Knowledge Base</span></a>
+                </li>
+                <li class="rd-navbar-nav-item"><a class="rd-navbar-link" href="#"><span class="rd-navbar-icon fa-columns"></span><span class="rd-navbar-link-text"> Contact Us</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="section-sm pt-0">
+        <div class="container-fluid">
+          <div class="row row-30">
+            <div class="col-sm-12">
+              <div class="panel custom-panel-one">
+                <div class="panel-body">
+                  <ul class="nav nav-pills scroller scroller-horizontal" role="tablist">
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#panelTabAll" role="tab" aria-selected="true">All</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#panelTabPurchase" role="tab" aria-selected="false">Purchase</a></li>
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#panelTabSales" role="tab" aria-selected="false">Sales</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade" id="panelTabAll" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</div>
+                    <div class="tab-pane fade" id="panelTabPurchase" role="tabpanel">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</div>
+                    <div class="tab-pane fade show active" id="panelTabSales" role="tabpanel">
+                      <div class="row">
+                        <div class="col-12 col-md-8 col-lg-8">
+                          <div class="panel panel-nav border">
+                            <div class="panel-header d-flex align-items-center">
+                              <h6 class="panel-title flex-grow-1">Sales Report</h6>
+                            </div>
+                            <div class="panel-body">
+                              <div class="row row-15 align-items-center">
+                                <div class="col-sm-6">
+                                  <ul class="nav nav-tabs scroller scroller-horizontal" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#panelTab1" role="tab" aria-controls="panelTab1" aria-selected="true">Hour</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#panelTab2" role="tab" aria-controls="panelTab2" aria-selected="false">Day</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#panelTab3" role="tab" aria-controls="panelTab3" aria-selected="false">Week</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#panelTab4" role="tab" aria-controls="panelTab4" aria-selected="false">Month</a></li>
+                                  </ul>
+                                </div>
+                                <div class="col-sm-6 text-sm-right">
+                                  <div class="d-inline-block" style="max-width: 220px">
+                                    <div class="input-group input-group-sm">
+                                      <div class="input-group-prepend">
+                                        <label class="input-group-text" for="datetime3"><span class="fa fa-calendar"></span></label>
+                                      </div>
+                                      <input class="form-control" id="datetime3" type="text" name="datetime" data-datetimepicker>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-content">
+                                <div class="tab-pane fade show active" id="panelTab1" role="tabpanel">
+                                  <div class="highcharts-container" data-highcharts-options="{&quot;credits&quot;:false,&quot;colors&quot;:[&quot;#1bc773&quot;,&quot;#A389D4&quot;,&quot;#04A9F5&quot;,&quot;#E85E22&quot;],&quot;chart&quot;:{&quot;type&quot;:&quot;areaspline&quot;,&quot;spacingTop&quot;:30,&quot;spacingRight&quot;:0},&quot;title&quot;:{&quot;text&quot;:null},&quot;legend&quot;:{&quot;align&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;bottom&quot;,&quot;x&quot;:0,&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#1a2643&quot;,&quot;fontWeight&quot;:400}},&quot;xAxis&quot;:{&quot;categories&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;June&quot;],&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#a7a9b2&quot;,&quot;fontSize&quot;:&quot;15px&quot;}}},&quot;yAxis&quot;:{&quot;min&quot;:0,&quot;tickInterval&quot;:10,&quot;title&quot;:{&quot;text&quot;:null},&quot;lineWidth&quot;:1,&quot;lineColor&quot;:&quot;#e8e8e8&quot;,&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#a7a9b2&quot;,&quot;fontSize&quot;:&quot;15px&quot;}}},&quot;plotOptions&quot;:{&quot;areaspline&quot;:{&quot;fillOpacity&quot;:0.08}},&quot;series&quot;:[{&quot;name&quot;:&quot;AMAZON - FDX FRANCE&quot;,&quot;data&quot;:[40,30,40,35,40,36]},{&quot;name&quot;:&quot;AMAZON FDX GERMAN&quot;,&quot;data&quot;:[50,32,30,45,40,50]},{&quot;name&quot;:&quot;AMAZON FDX GERMAN&quot;,&quot;data&quot;:[30,40,30,40,50,30]},{&quot;name&quot;:&quot;AMAZON FDX UK&quot;,&quot;data&quot;:[20,30,40,20,50,20]}]}" style="height:400px;"></div>
+                                </div>
+                                <div class="tab-pane fade" id="panelTab2" role="tabpanel">
+                                  <div class="highcharts-container" data-highcharts-options="{&quot;credits&quot;:false,&quot;colors&quot;:[&quot;#1bc773&quot;,&quot;#A389D4&quot;,&quot;#1665D8&quot;,&quot;#04A9F5&quot;],&quot;chart&quot;:{&quot;type&quot;:&quot;areaspline&quot;,&quot;spacingTop&quot;:30,&quot;spacingRight&quot;:0},&quot;title&quot;:{&quot;text&quot;:null},&quot;legend&quot;:{&quot;align&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;bottom&quot;,&quot;x&quot;:0,&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#1a2643&quot;,&quot;fontWeight&quot;:400}},&quot;xAxis&quot;:{&quot;categories&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;June&quot;],&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#a7a9b2&quot;,&quot;fontSize&quot;:&quot;15px&quot;}}},&quot;yAxis&quot;:{&quot;min&quot;:0,&quot;tickInterval&quot;:10,&quot;title&quot;:{&quot;text&quot;:null},&quot;lineWidth&quot;:1,&quot;lineColor&quot;:&quot;#e8e8e8&quot;,&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#a7a9b2&quot;,&quot;fontSize&quot;:&quot;15px&quot;}}},&quot;plotOptions&quot;:{&quot;areaspline&quot;:{&quot;fillOpacity&quot;:0.08}},&quot;series&quot;:[{&quot;name&quot;:&quot;AMAZON - FDX FRANCE&quot;,&quot;data&quot;:[40,30,40,35,40,36]},{&quot;name&quot;:&quot;AMAZON FDX GERMAN&quot;,&quot;data&quot;:[50,32,30,45,40,50]},{&quot;name&quot;:&quot;AMAZON FDX GERMAN&quot;,&quot;data&quot;:[30,40,30,40,50,30]},{&quot;name&quot;:&quot;AMAZON FDX UK&quot;,&quot;data&quot;:[20,30,40,20,50,20]}]}" style="height:400px;"></div>
+                                </div>
+                                <div class="tab-pane fade" id="panelTab3" role="tabpanel">
+                                  <div class="highcharts-container" data-highcharts-options="{&quot;credits&quot;:false,&quot;colors&quot;:[&quot;#1bc773&quot;,&quot;#A389D4&quot;,&quot;#1665D8&quot;,&quot;#04A9F5&quot;],&quot;chart&quot;:{&quot;type&quot;:&quot;areaspline&quot;,&quot;spacingTop&quot;:30,&quot;spacingRight&quot;:0},&quot;title&quot;:{&quot;text&quot;:null},&quot;legend&quot;:{&quot;align&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;bottom&quot;,&quot;x&quot;:0,&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#1a2643&quot;,&quot;fontWeight&quot;:400}},&quot;xAxis&quot;:{&quot;categories&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;June&quot;],&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#a7a9b2&quot;,&quot;fontSize&quot;:&quot;15px&quot;}}},&quot;yAxis&quot;:{&quot;min&quot;:0,&quot;tickInterval&quot;:10,&quot;title&quot;:{&quot;text&quot;:null},&quot;lineWidth&quot;:1,&quot;lineColor&quot;:&quot;#e8e8e8&quot;,&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#a7a9b2&quot;,&quot;fontSize&quot;:&quot;15px&quot;}}},&quot;plotOptions&quot;:{&quot;areaspline&quot;:{&quot;fillOpacity&quot;:0.08}},&quot;series&quot;:[{&quot;name&quot;:&quot;AMAZON - FDX FRANCE&quot;,&quot;data&quot;:[40,30,40,35,40,36]},{&quot;name&quot;:&quot;AMAZON FDX GERMAN&quot;,&quot;data&quot;:[50,32,30,45,40,50]},{&quot;name&quot;:&quot;AMAZON FDX GERMAN&quot;,&quot;data&quot;:[30,40,30,40,50,30]},{&quot;name&quot;:&quot;AMAZON FDX UK&quot;,&quot;data&quot;:[20,30,40,20,50,20]}]}" style="height:400px;"></div>
+                                </div>
+                                <div class="tab-pane fade" id="panelTab4" role="tabpanel">
+                                  <div class="highcharts-container" data-highcharts-options="{&quot;credits&quot;:false,&quot;colors&quot;:[&quot;#1bc773&quot;,&quot;#A389D4&quot;,&quot;#1665D8&quot;,&quot;#04A9F5&quot;],&quot;chart&quot;:{&quot;type&quot;:&quot;areaspline&quot;,&quot;spacingTop&quot;:30,&quot;spacingRight&quot;:0},&quot;title&quot;:{&quot;text&quot;:null},&quot;legend&quot;:{&quot;align&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;bottom&quot;,&quot;x&quot;:0,&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#1a2643&quot;,&quot;fontWeight&quot;:400}},&quot;xAxis&quot;:{&quot;categories&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;June&quot;],&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#a7a9b2&quot;,&quot;fontSize&quot;:&quot;15px&quot;}}},&quot;yAxis&quot;:{&quot;min&quot;:0,&quot;tickInterval&quot;:10,&quot;title&quot;:{&quot;text&quot;:null},&quot;lineWidth&quot;:1,&quot;lineColor&quot;:&quot;#e8e8e8&quot;,&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#a7a9b2&quot;,&quot;fontSize&quot;:&quot;15px&quot;}}},&quot;plotOptions&quot;:{&quot;areaspline&quot;:{&quot;fillOpacity&quot;:0.08}},&quot;series&quot;:[{&quot;name&quot;:&quot;AMAZON - FDX FRANCE&quot;,&quot;data&quot;:[40,30,40,35,40,36]},{&quot;name&quot;:&quot;AMAZON FDX GERMAN&quot;,&quot;data&quot;:[50,32,30,45,40,50]},{&quot;name&quot;:&quot;AMAZON FDX GERMAN&quot;,&quot;data&quot;:[30,40,30,40,50,30]},{&quot;name&quot;:&quot;AMAZON FDX UK&quot;,&quot;data&quot;:[20,30,40,20,50,20]}]}" style="height:400px;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row custom-total">
+                            <div class="col-12 col-md-4">
+                              <div class="panel border">
+                                <div class="panel-body">
+                                  <p>Total revanue</p>
+                                  <h4 class="text-dark">&pound;94,015.98 <span class="text-green">+14.5(1.35%)</span></h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                              <div class="panel border">
+                                <div class="panel-body">
+                                  <p>No.of Units Ordered</p>
+                                  <h4 class="text-dark">&pound;5,387 <span class="text-red">-3.95(0,35%)</span></h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                              <div class="panel border">
+                                <div class="panel-body">
+                                  <p>Avg.Order Value</p>
+                                  <h4 class="text-dark">&pound;16.29 <span class="text-green">+1.23(2,14%)</span></h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel border">
+                            <div class="panel-header d-flex align-items-center">
+                              <div class="h6 panel-title flex-grow-1">Fast Selling Lines - Top 10</div>
+                            </div>
+                            <div class="panel-body dashboard">
+                              <div class="table-responsive scroller scroller-horizontal">
+                                <table class="table">
+                                  <thead>
+                                    <tr class="table-light">
+                                      <th class="text-light font-weight-normal" scope="col">SKU</th>
+                                      <th class="text-light font-weight-normal" scope="col">ITEM NAME</th>
+                                      <th class="text-light font-weight-normal" scope="col" >QUANTITY</th>
+                                      <th class="text-light font-weight-normal" scope="col" >SOLD</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>#467</td>
+                                      <td>Sed ut perspiciatis unde omnis iste natus error sit</td>
+                                      <td>217</td>
+                                      <td>69</td>
+                                    </tr>
+                                    <tr>
+                                      <td>#466</td>
+                                      <td>Eaque ipsa quae ab illo inventore veritatis et quasi architecto</td>
+                                      <td>100</td>
+                                      <td>129</td>
+                                    </tr>
+                                    <tr>
+                                      <td>#120</td>
+                                      <td>Ut enim ad minima veniam, quis nostrum exercitationem ullam</td>
+                                      <td>115</td>
+                                      <td>229</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel border">
+                            <div class="panel-header d-flex align-items-center">
+                              <div class="h6 panel-title flex-grow-1">Count of Orders</div>
+                            </div>
+                            <div class="panel-body dashboard">
+                              <div class="table-responsive scroller scroller-horizontal">
+                                <table class="table">
+                                  <thead>
+                                    <tr class="table-light">
+                                      <th class="text-light font-weight-normal" scope="col">ACCOUNT NAME</th>
+                                      <th class="text-light font-weight-normal" scope="col">YESTERDAY</th>
+                                      <th class="text-light font-weight-normal" scope="col" >LAST 3 DAYS</th>
+                                      <th class="text-light font-weight-normal" scope="col" >LAST 7 DAYS</th>
+                                      <th class="text-light font-weight-normal" scope="col">LAST 14 DAYS</th>
+                                      <th class="text-light font-weight-normal" scope="col">LAST 30 DAYS</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Amazon - CA</td>
+                                      <td>6</td>
+                                      <td>5</td>
+                                      <td>9</td>
+                                      <td>8</td>
+                                      <td>3</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Amazon - FR</td>
+                                      <td>6</td>
+                                      <td>5</td>
+                                      <td>9</td>
+                                      <td>8</td>
+                                      <td>3</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Amazon - DE</td>
+                                      <td>6</td>
+                                      <td>5</td>
+                                      <td>9</td>
+                                      <td>8</td>
+                                      <td>3</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                          <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                              <div class="sales-details panel p-3 border">
+                                <p>Lifetime Sales
+                                  <span class="h5 f-700 d-block">&pound;3,214,886</span>
+                                  <span class="badge badge-secondary badge-pill"><span class="h5 mdi-bank"></span></span>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                              <div class="sales-details panel p-3 border">
+                                <p>Average Per Order
+                                  <span class="h5 f-700 d-block">&pound;23.89</span>
+                                  <span class="badge badge-danger badge-pill"><span class="h5 mdi-bank"></span></span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                              <div class="sales-details panel p-3 border">
+                                <p>Lifetime Orders
+                                  <span class="h5 f-700 d-block">134,596</span>
+                                  <span class="badge badge-info badge-pill"><span class="h5 mdi-bank"></span></span>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                              <div class="sales-details panel p-3 border">
+                                <p>Units Ordered
+                                  <span class="h5 f-700 d-block">148,875</span>
+                                  <span class="badge badge-primary badge-pill"><span class="h5 mdi-bank"></span></span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <!-- Linear area chart-->
+                            <div class="col-sm-12">
+                              <div class="panel border">
+                                <div class="panel-header">
+                                  <h6 class="panel-title">Sales Graph</h6>
+                                </div>
+                                <div class="panel-body pb-0">
+                                  <div class="highcharts-container" data-highcharts-options="{&quot;credits&quot;:false,&quot;colors&quot;:[&quot;#0052ff&quot;,&quot;#E85E22&quot;],&quot;chart&quot;:{&quot;type&quot;:&quot;area&quot;},&quot;title&quot;:{&quot;text&quot;:null},&quot;legend&quot;:{&quot;enabled&quot;:false},&quot;xAxis&quot;:{&quot;min&quot;:5,&quot;max&quot;:60,&quot;tickInterval&quot;:5,&quot;tickLength&quot;:0,&quot;gridLineWidth&quot;:1,&quot;tickColor&quot;:&quot;transparent&quot;,&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#a7a9b2&quot;,&quot;fontSize&quot;:&quot;15px&quot;}}},&quot;yAxis&quot;:{&quot;min&quot;:0,&quot;gridLineWidth&quot;:0,&quot;lineWidth&quot;:1,&quot;lineColor&quot;:&quot;#e8e8e8&quot;,&quot;labels&quot;:{&quot;enabled&quot;:false},&quot;title&quot;:{&quot;text&quot;:null}},&quot;tooltip&quot;:{&quot;headerFormat&quot;:&quot;&lt;table&gt;&quot;,&quot;pointFormat&quot;:&quot;&lt;tr&gt;&lt;td style=\&quot;padding:0, font-weight: 400\&quot;&gt;&lt;span style=\&quot;color:{series.color}; font-size:22px; padding-right:5px\&quot;&gt;●&lt;/span&gt;{series.name}: &lt;b&gt;{point.y:.1f}&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&quot;,&quot;footerFormat&quot;:&quot;&lt;/table&gt;&quot;,&quot;shared&quot;:true,&quot;useHTML&quot;:true,&quot;borderColor&quot;:&quot;#dde3e8&quot;,&quot;backgroundColor&quot;:&quot;#fff&quot;,&quot;style&quot;:{&quot;color&quot;:&quot;#1a2643&quot;,&quot;fontSize&quot;:&quot;15px&quot;,&quot;fontFamily&quot;:&quot;\&quot;Muli\&quot;, sans-serif&quot;,&quot;fontWeight&quot;:400,&quot;lineHeight&quot;:&quot;20px&quot;}},&quot;plotOptions&quot;:{&quot;area&quot;:{&quot;fillOpacity&quot;:0.1,&quot;marker&quot;:{&quot;fillColor&quot;:&quot;#ffffff&quot;,&quot;symbol&quot;:&quot;circle&quot;,&quot;lineWidth&quot;:2,&quot;lineColor&quot;:null}}},&quot;series&quot;:[{&quot;name&quot;:&quot;Download&quot;,&quot;data&quot;:[[5,15],[10,20],[15,18],[20,19],[25,30],[30,15],[35,20],[40,15],[45,18],[50,30],[55,25],[60,28]]},{&quot;name&quot;:&quot;Upload&quot;,&quot;data&quot;:[[5,17],[10,14],[15,20],[20,18],[25,25],[30,32],[35,22],[40,26],[45,15],[50,26],[55,25],[60,28]]}]}"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <!-- Donut Chart-->
+                            <div class="col-sm-12">
+                              <div class="panel border">
+                                <!-- <div class="panel-header">
+                                  <h6 class="panel-title">Donut Chart</h6>
+                                  </div> -->
+                                <div class="panel-body">
+                                  <!--div class="highcharts-container" data-highcharts-options="{&quot;credits&quot;:false,&quot;colors&quot;:[&quot;#0052ff&quot;,&quot;#fe355f&quot;,&quot;#fd7e14&quot;,&quot;#feb006&quot;,&quot;#1bc773&quot;,&quot;#8bd3fb&quot;],&quot;title&quot;:{&quot;text&quot;:&quot;Browser shares 2019&quot;,&quot;align&quot;:&quot;center&quot;},&quot;tooltip&quot;:{&quot;pointFormat&quot;:&quot;{series.name}: &lt;b&gt;{point.percentage:.1f}%&lt;/b&gt;&quot;},&quot;plotOptions&quot;:{&quot;pie&quot;:{&quot;dataLabels&quot;:{&quot;enabled&quot;:true,&quot;style&quot;:{&quot;fontWeight&quot;:&quot;bold&quot;}},&quot;center&quot;:[&quot;50%&quot;,&quot;50%&quot;]}},&quot;series&quot;:[{&quot;type&quot;:&quot;pie&quot;,&quot;name&quot;:&quot;Browser share&quot;,&quot;innerSize&quot;:&quot;70%&quot;,&quot;data&quot;:[[&quot;Chrome&quot;,58.9],[&quot;Firefox&quot;,13.29],[&quot;Internet Explorer&quot;,13],[&quot;Edge&quot;,3.78],[&quot;Safari&quot;,3.42],{&quot;name&quot;:&quot;Other&quot;,&quot;y&quot;:7.61,&quot;dataLabels&quot;:{&quot;enabled&quot;:false}}],&quot;dataLabels&quot;:{&quot;style&quot;:{&quot;fontWeight&quot;:&quot;normal&quot;,&quot;color&quot;:&quot;#777&quot;,&quot;textOutline&quot;:&quot;transparent&quot;}}}]}"></div-->
+                                  <div class="highcharts-container" data-highcharts-options="{&quot;credits&quot;:false,&quot;colors&quot;:[&quot;#00CE7D&quot;,&quot;#273A8A&quot;,&quot;#02ABCF&quot;,&quot;#E85E22&quot;,&quot;#312D29&quot;],&quot;chart&quot;:{&quot;type&quot;:&quot;pie&quot;},&quot;title&quot;:{&quot;text&quot;:null},&quot;legend&quot;:{&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#1a2643&quot;,&quot;fontWeight&quot;:&quot;normal&quot;},&quot;itemHoverStyle&quot;:{&quot;color&quot;:&quot;#777&quot;}},&quot;tooltip&quot;:{&quot;pointFormat&quot;:&quot;{series.name}: &lt;b&gt;{point.percentage:.1f}%&lt;/b&gt;&quot;,&quot;style&quot;:{&quot;color&quot;:&quot;#1a2643&quot;,&quot;fontSize&quot;:&quot;12px&quot;,&quot;fontFamily&quot;:&quot;\&quot;Muli\&quot;, sans-serif&quot;,&quot;fontWeight&quot;:400,&quot;lineHeight&quot;:&quot;20px&quot;}},&quot;plotOptions&quot;:{&quot;pie&quot;:{&quot;allowPointSelect&quot;:true,&quot;cursor&quot;:&quot;pointer&quot;,&quot;borderColor&quot;:&quot;transparent&quot;,&quot;dataLabels&quot;:{&quot;enabled&quot;:false},&quot;showInLegend&quot;:true}},&quot;series&quot;:[{&quot;name&quot;:&quot;Brands&quot;,&quot;colorByPoint&quot;:true,&quot;data&quot;:[{&quot;name&quot;:&quot;Chrome&quot;,&quot;y&quot;:61.41,&quot;sliced&quot;:true,&quot;selected&quot;:true},{&quot;name&quot;:&quot;Internet Explorer&quot;,&quot;y&quot;:11.84},{&quot;name&quot;:&quot;Firefox&quot;,&quot;y&quot;:10.85},{&quot;name&quot;:&quot;Edge&quot;,&quot;y&quot;:4.67},{&quot;name&quot;:&quot;Safari&quot;,&quot;y&quot;:4.18}]}]}" style="height:400px;"></div>
+                                  <!-- grey 1-->
+                                  <div class="panel-body custom-circle">
+                                    <div class="progress-circle-wrap">
+                                      <span>eBay - Something Different - CA</span>
+                                      <div class="progress-counter-wrap">
+                                        <div class="progress-counter-value"><span class="progress-counter">92</span></div>
+                                      </div>
+                                      <svg class="progress-circle" x="0" y="0" width="50" height="130" viewbox="0 0 130 130">
+                                        <circle class="bg" cx="65" cy="65" r="53"></circle>
+                                        <circle class="fg clipped" cx="65" cy="65" r="55" style="stroke: #00CE7D"></circle>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <!-- grey 2-->
+                                  <div class="panel-body custom-circle">
+                                    <div class="progress-circle-wrap">
+                                      <span>eBay - Something Different - FR</span>
+                                      <div class="progress-counter-wrap">
+                                        <div class="progress-counter-value"><span class="progress-counter">80</span></div>
+                                      </div>
+                                      <svg class="progress-circle" x="0" y="0" width="50" height="130" viewbox="0 0 130 130">
+                                        <circle class="bg" cx="65" cy="65" r="53"></circle>
+                                        <circle class="fg clipped" cx="65" cy="65" r="55" style="stroke: #273A8A"></circle>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <!-- grey 3-->
+                                  <div class="panel-body custom-circle">
+                                    <div class="progress-circle-wrap">
+                                      <span>eBay - Something Different - US</span>
+                                      <div class="progress-counter-wrap">
+                                        <div class="progress-counter-value"><span class="progress-counter">80</span></div>
+                                      </div>
+                                      <svg class="progress-circle" x="0" y="0" width="50" height="130" viewbox="0 0 130 130">
+                                        <circle class="bg" cx="65" cy="65" r="53"></circle>
+                                        <circle class="fg clipped" cx="65" cy="65" r="55" style="stroke: #02ABCF"></circle>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <!-- grey 1-->
+                                  <div class="panel-body custom-circle">
+                                    <div class="progress-circle-wrap">
+                                      <span>eBay - Something Different - CA</span>
+                                      <div class="progress-counter-wrap">
+                                        <div class="progress-counter-value"><span class="progress-counter">92</span></div>
+                                      </div>
+                                      <svg class="progress-circle" x="0" y="0" width="50" height="130" viewbox="0 0 130 130">
+                                        <circle class="bg" cx="65" cy="65" r="53"></circle>
+                                        <circle class="fg clipped" cx="65" cy="65" r="55" style="stroke: #00CE7D"></circle>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <!-- grey 2-->
+                                  <div class="panel-body custom-circle">
+                                    <div class="progress-circle-wrap">
+                                      <span>eBay - Something Different - FR</span>
+                                      <div class="progress-counter-wrap">
+                                        <div class="progress-counter-value"><span class="progress-counter">80</span></div>
+                                      </div>
+                                      <svg class="progress-circle" x="0" y="0" width="50" height="130" viewbox="0 0 130 130">
+                                        <circle class="bg" cx="65" cy="65" r="53"></circle>
+                                        <circle class="fg clipped" cx="65" cy="65" r="55" style="stroke: #273A8A"></circle>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <!-- grey 3-->
+                                  <div class="panel-body custom-circle">
+                                    <div class="progress-circle-wrap">
+                                      <span>eBay - Something Different - US</span>
+                                      <div class="progress-counter-wrap">
+                                        <div class="progress-counter-value"><span class="progress-counter">80</span></div>
+                                      </div>
+                                      <svg class="progress-circle" x="0" y="0" width="50" height="130" viewbox="0 0 130 130">
+                                        <circle class="bg" cx="65" cy="65" r="53"></circle>
+                                        <circle class="fg clipped" cx="65" cy="65" r="55" style="stroke: #02ABCF"></circle>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="py-4 download-btn">
+                                <strong class="txt-black">PDF Report</strong><br/>
+                                <small>Download monthly report</small><br/><br/>
+                                <button class="btn btn-primary btn-block btn-orange " type="button">Download <img src="images/icon-download.png" alt=""/> </button>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer footer-small">
+        <div class="d-flex justify-content-between align-items-center group-10">
+          <div>© 247</div>
+          <div>
+            <button class="to-top btn btn-sm btn-primary"><span class="fa-chevron-up"></span></button>
+          </div>
+        </div>
+      </footer>
+      <div class="sidebar scroller scroller-vertical">
+        <div class="panel">
+          <div class="panel-header">
+            <h6 class="panel-title"><span class="panel-icon fa-trophy"></span><span>Right Sidebar Content</span></h6>
+          </div>
+          <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat ac tortor eu viverra. Etiam ipsum neque, fermentum quis sagittis nec, hendrerit id diam. Mauris a tincidunt odio. Sed porttitor ex pulvinar, tristique sapien sed, malesuada nunc.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+
+.rd-navbar-fixed{
+   
+    .rd-navbar-sidebar{
+        background-color: $leftnav !important;
+    }
+    .rd-navbar-sidebar-panel {
+        background-color: $logo-bg!important;
+    }
+    .rd-navbar-nav-item,
+    .rd-navbar-dropdown-item {
+        border-top: transparent !important;
+    }
+   
+    .rd-navbar-dropdown-item{
+        border-top: transparent !important;
+        &.active > .rd-navbar-link{
+            background-color: $orange !important;
+        }
+    }
+    .rd-navbar-link{
+        color: $white !important;
+        &:before{
+            content:'';
+            background-color: transparent!important;
+        }
+    }
+    .rd-navbar-nav-item.opened > .rd-navbar-link ,
+    .rd-navbar-link:hover,
+    .rd-navbar-nav-item.active > .rd-navbar-link{
+        background-color: $leftnav-active !important;
+    }
+    .rd-navbar-submenu-toggle,
+    .rd-navbar-nav-item.active > .rd-navbar-submenu-toggle{
+        color: $white !important;
+    }
+
+    .rd-navbar-dropdown {
+        background-color: $leftnav-active !important;
+    }
+} 
